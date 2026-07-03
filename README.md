@@ -1,6 +1,8 @@
 # logbook
 
-Recording the progress I make regularly while exploring various tools, approaches and systems in my technical journey,  drawing inspiration from the original meaning of the term logbook that originated with the ship's log, a maritime record of important events in the management, operation, and navigation of a ship
+<img width="1280" height="960" alt="Grand_Turk" src="https://github.com/user-attachments/assets/d38bd7db-e89b-4b92-8093-ed1cb0eb2fa3" />
+
+The objective of this repository is to record the progress I make regularly while exploring various tools, approaches and systems in my technical journey,  drawing inspiration from the original meaning of the term logbook that originated with the ship's log, a maritime record of important events in the management, operation, and navigation of a ship.
 
 ## Structure
 
@@ -16,21 +18,15 @@ logbook/
 └── INDEX.md          (optional, generated or hand-updated tag index)
 ```
 
-- One folder per month (`entries/YYYY-MM/`) keeps any single directory from
-  becoming unbrowsable after a year or two.
-- One file per entry, named `YYYY-MM-DD-short-slug.md` and the date prefixes
-  result in entries sorting correctly without additional tooling.
-- No build step, no static site generator, no dependencies. It's just
-  markdown files in a git repo. Clone it, open it in any editor, done.
+- One folder per month (`entries/YYYY-MM/`) keeps any single directory from becoming too long and difficult to browse.
+- One file per entry, named `YYYY-MM-DD-short-slug.md` and the date prefixes help sort entries correctly.
+- Maintenance is low as we just need to create the markdown files, commit and push.
 
 ## Workflow
 
-1. Finish something worth remembering (merged a PR, closed an issue, hit and
-   solved a weird bug, made a design decision).
-2. Copy `entries/_template.md`, rename it, fill it in. 5–10 minutes, same day
-   if possible.
-3. Commit and push. That's the whole publishing step — no drafts folder, no
-   CMS, no "publish" button.
+1. Finish something worth remembering like a merged PR, a resolved issue, a design decision.
+2. Copy `entries/_template.md`, rename it, fill it in. 5–10 minutes, same day if possible.
+3. Commit and push. That's it. There is no build step to generate a site and maintain it.
 
 ## Tags
 
@@ -41,7 +37,4 @@ Free-text tags at the bottom of each entry (e.g. `#concurrency #tradeoff
 grep -ril "#tradeoff" entries/
 ```
 
-No index required — grep is the search engine.
-
-If the repo grows large, `INDEX.md` can be hand-updated or generated
-with the one-line script in `.github/build_index.sh` when needed.
+The `INDEX.md` can be hand-updated or generated with the script in `.github/build_index.sh` when needed.
