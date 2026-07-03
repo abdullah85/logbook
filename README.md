@@ -28,6 +28,12 @@ logbook/
 2. Copy `entries/_template.md`, rename it, fill it in. 5–10 minutes, same day if possible.
 3. Commit and push. That's it. There is no build step to generate a site and maintain it.
 
+## Threading entries
+
+If you revisit a topic later, don't edit the old entry — write a new one
+and link them with the `Follows` / `Followed by` fields. This keeps each
+entry an honest point-in-time snapshot instead of a mutated record.
+
 ## Tags
 
 Free-text tags at the bottom of each entry (e.g. `#concurrency #tradeoff
