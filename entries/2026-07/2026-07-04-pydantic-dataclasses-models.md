@@ -48,7 +48,7 @@ except pydantic.ValidationError as e:
     """
 ```
 
-In the above [example code snippet](https://pydantic.dev/docs/validation/latest/concepts/dataclasses/#validators-and-initialization-hooks), we see that a validation error is thrown for incorrect type assigned to a parent field. It is interesting to note that the parent classes are all standard dataclasses. So, this is the benefit of using `pydantic.dataclass` when compared to standard `dataclass` from `dataclasses` in the standard library and review
+In the above [example code snippet](https://pydantic.dev/docs/validation/latest/concepts/dataclasses/#stdlib-dataclasses-and-pydantic-dataclasses), we see that a validation error is thrown for incorrect type assigned to a parent field. It is interesting to note that the parent classes are all standard dataclasses. So, this is the benefit of using `pydantic.dataclass` when compared to standard `dataclass` from `dataclasses` in the standard library and review
 
 ```
 @dataclasses.dataclass
