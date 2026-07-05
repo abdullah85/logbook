@@ -1,6 +1,6 @@
 # logbook
 
-A concise record of events, insights and observations obtained while exploring various tools, approaches and systems in my technical journey,  drawing inspiration from the original meaning of the term logbook that originated with the ship's log, a maritime record of important events in the management, operation, and navigation of a ship.
+A concise record of events, insights and observations obtained in my technical journey,  drawing inspiration from the original meaning of the term logbook that originated with the ship's log, a maritime record of important events in the management, operation, and navigation of a ship.
 
 <img width="1280" height="960" alt="Grand_Turk" src="https://github.com/user-attachments/assets/d38bd7db-e89b-4b92-8093-ed1cb0eb2fa3" />
 
