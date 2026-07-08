@@ -18,23 +18,17 @@ logbook/
 └── INDEX.md          (optional, generated or hand-updated tag index)
 ```
 
-- One folder per month (`entries/YYYY-MM/`) keeps any single directory from becoming too long and difficult to browse.
+- One folder per month (`entries/YYYY-MM/`) keeps any single directory from becoming too long.
 - One file per entry, named `YYYY-MM-DD-short-slug.md` and the date prefixes help sort entries correctly.
 - Maintenance is low as we just need to create the markdown files, commit and push.
 
 ## Workflow
 
-1. Finish something worth remembering like a merged PR, a resolved issue, a design decision.
-2. Copy `entries/_template.md`, rename it, fill it in. 5–10 minutes, same day if possible.
-3. Commit and push. That's it. There is no build step to generate a site and maintain it.
+1. Finish something worth remembering like a merged PR, a resolved issue or a design decision.
+2. Copy `entries/_template.md`, rename it, fill it in within 5–10 minutes, on the same day if possible.
+3. Commit and push to Github which takes care of the presentation.
 
-## Threading entries
-
-If you revisit a topic later, don't edit the old entry — write a new one
-and link them with the `Follows` / `Followed by` fields. This keeps each
-entry an honest point-in-time snapshot instead of a mutated record.
-
-## Tags
+## Tags and Threading entries
 
 Free-text tags at the bottom of each entry (e.g. `#concurrency #tradeoff
 #debugging #open-source`). To find everything on a topic:
@@ -44,3 +38,7 @@ grep -ril "#tradeoff" entries/
 ```
 
 The `INDEX.md` can be hand-updated or generated with the script in `.github/build_index.sh` when needed.
+
+If you revisit a topic later, write a new entry instead of modifying the old one and link them with the `Follows` / `Followed by` fields. 
+
+This keeps each entry an honest point-in-time snapshot instead of a mutated record.
