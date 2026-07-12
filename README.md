@@ -1,6 +1,6 @@
-# logbook
+# Logbook
 
-A concise record of events, insights and observations obtained in my technical journey,  drawing inspiration from the original meaning of the term logbook that originated with the ship's log, a maritime record of important events in the management, operation, and navigation of a ship.
+A concise record of events, insights and observations obtained in my technical journey,  drawing inspiration from the original meaning of the word logbook that was also known as the ship's log or simply log, a maritime record of important events in the management, operation, and navigation of a ship.
 
 <img width="1280" height="960" alt="Grand_Turk" src="https://github.com/user-attachments/assets/d38bd7db-e89b-4b92-8093-ed1cb0eb2fa3" />
 
@@ -39,6 +39,6 @@ grep -ril "#tradeoff" entries/
 
 The `INDEX.md` can be hand-updated or generated with the script in `.github/build_index.sh` when needed.
 
-If you revisit a topic later, write a new entry instead of modifying the old one and link them with the `Follows` / `Followed by` fields. 
+The `Continues From` / `Continued In` fields above the tags may be used to link across entries appropriately. 
 
-This keeps each entry an honest point-in-time snapshot instead of a mutated record.
+Thus, we can relate different entries while maintaining a near accurate record of events similar to the original ship's log.
