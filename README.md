@@ -41,4 +41,4 @@ The `INDEX.md` can be hand-updated or generated with the script in `.github/buil
 
 The `Continues From` / `Continued In` fields above the tags may be used to link across entries appropriately. 
 
-Thus, we can relate different entries while maintaining a near accurate record of events similar to the original ship's log.
+Thus, we relate entries while maintaining a near accurate record of events similar to the original ship's log.
