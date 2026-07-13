@@ -1,10 +1,8 @@
-# Understanding Pydantic Models, Pydantic dataclasess, standard dataclasses, namedtuples 
+# Pydantic Models, dataclasess and namedtuples 
+<!-- — describing the event, concepts learnt or progress made. -->
+Previous · [Next](./2026-07-12-fetch-latest-price.md)
 
-**Date:** 2026-07-03
-**Repo/Project:** 
-**Related:** PR #__ / Issue #__ (link if applicable)
-**Follows:** _(link to the earlier entry this continues, if any)_
-**Followed by:** _(filled in later, once a follow-up entry exists)_
+Date: 2026-07-03 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
 ## Concepts
 
@@ -67,11 +65,15 @@ This clearly illustrates that standard dataclasses do not have in-built validati
 
 ## Summary
 
-This was a short overview or motivation for Pydantic dataclasses, models and relation with standard dataclasses.
+This was a short overview or motivation for Pydantic dataclasses, models and its relation with standard dataclasses.
 
 ## Next Steps
 
 A related topic is the validation in Pydantic models versus that for Pydantic dataclasses.
 
 ---
+· Continues from: <!--  link to the earlier entry this continues, if any -->
+
+· Continued in: <!-- filled in later, once a follow-up entry exists -->
+
 Tags: #pydantic #dataclass #pydantic-model
