@@ -1,7 +1,7 @@
 # Fetch the Latest Price automatically
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-04-pydantic-dataclasses-models.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-07-04-pydantic-dataclasses-models.md) · [Next](./2026-07-14-debug-api-usage.md)
 
 Date: 2026-07-11 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) <!-- · PR #__ --> <!-- · Issue #__ --> · Commit: [dbd9efb3](https://github.com/abdullah85/metallictrends/commit/dbd9efb3cf45be820e016cc667dab13d9ad73d3f)
 
