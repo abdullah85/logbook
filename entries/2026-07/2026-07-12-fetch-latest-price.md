@@ -8,9 +8,9 @@ Date: 2026-07-11 · Repo: [metallictrends](https://github.com/abdullah85/metalli
 ## Context
 We need to fetch the latest price from [metals.dev](https://metals.dev/) site dynamically.
 
-Earlier, we had a command line tool `run.py` to fetch the data and load the database.
+Earlier, we had a command line tool `run.py` to fetch the data and load the database manually each time.
 
-The main issue is that when a user loads the page, he receives state data which reflects the data that was loaded to the site earlier. There is scope for further improving the ingestion process and for now we would like to focus on the user experience. That is, when the user visits the site, we should retrieve the price dynamically and present it.
+The main issue is that when a user loads the page, he receives stale data which reflects the data that was loaded to the site via the commandline earlier. There is scope for further improving the ingestion process and for now we would like to focus on the user experience. That is, when the user visits the site, we should retrieve the price dynamically and present it.
 
 ## Decision
 
