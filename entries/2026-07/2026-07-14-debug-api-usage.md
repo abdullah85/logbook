@@ -63,6 +63,6 @@ We cannot avoid wastage completely (due to real world constraints) and we need t
 ---
 · Continues from: [Fetch latest Price](./2026-07-12-fetch-latest-price.md) <!--  link to the earlier entry this continues, if any -->
 
-· Continued in: [Debug API Usage](./2026-07-14-debug-api-usage.md)<!-- filled in later, once a follow-up entry exists -->
+· Continued in: <!-- filled in later, once a follow-up entry exists -->
 
 Tags: #api #metals.dev #fastapi

@@ -52,6 +52,6 @@ There seems to be some issue when fetching after a gap of one day and needs to b
 ---
 · Continues from: <!--  link to the earlier entry this continues, if any -->
 
-· Continued in: <!-- filled in later, once a follow-up entry exists -->
+· Continued in: [Debug API Usage](./2026-07-14-debug-api-usage.md)<!-- filled in later, once a follow-up entry exists -->
 
 Tags: #ssr #api #metals.dev
