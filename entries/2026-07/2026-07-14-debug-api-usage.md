@@ -1,6 +1,6 @@
 # Debug API Usage
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-12-fetch-latest-price.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-07-12-fetch-latest-price.md) · [Next](./2026-07-15-explore-api-usage-render-deployment.md)
 
 Date: 2026-07-13 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [3bbbc575](https://github.com/abdullah85/metallictrends/commit/3bbbc5755a70d583c09bcfb043e0e34513c254b1
 )
@@ -63,6 +63,6 @@ We cannot avoid wastage completely (due to real world constraints) and we need t
 ---
 · Continues from: [Fetch latest Price](./2026-07-12-fetch-latest-price.md) <!--  link to the earlier entry this continues, if any -->
 
-· Continued in: <!-- filled in later, once a follow-up entry exists -->
+· Continued in: [Explore API Usage Render Deployment](./2026-07-15-explore-api-usage-render-deployment.md)
 
 Tags: #api #metals.dev #fastapi
