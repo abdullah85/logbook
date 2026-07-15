@@ -30,8 +30,9 @@ logbook/
 
 ## Tags and Threading entries
 
-Free-text tags at the bottom of each entry (e.g. `#concurrency #tradeoff
-#debugging #open-source`). To find everything on a topic:
+Free-text tags at the bottom of each entry (e.g. `#tradeoff #debugging #open-source`). 
+
+To find everything on a topic:
 
 ```bash
 grep -ril "#tradeoff" entries/
@@ -41,4 +42,4 @@ The `INDEX.md` can be hand-updated or generated with the script in `.github/buil
 
 The `Continues From` / `Continued In` fields above the tags may be used to link across entries appropriately. 
 
-Thus, we relate entries while maintaining a near accurate record of events similar to the original ship's log.
+Thus, we relate entries while maintaining a record of events as they happen, similar to the original ship's log.
