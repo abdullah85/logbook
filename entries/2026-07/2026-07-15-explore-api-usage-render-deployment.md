@@ -19,7 +19,7 @@ The possible explanation I can come up with is due to the Render deployment on t
 
 For the deployment, I have used a private Github repo with the `metals.db` data commited to the `deploy` branch.
 
-This Github repo rebases the `deploy` branch from `main` branch of [metallictrends](https://github.com/abdullah85/metallictrends)  with the data.
+On the private repo, I manually rebase the `deploy` onto the `main` branch for deployment with updated code and data.
 
 I think the `metals.db` data on `deploy` branch is getting reset and fetches each time it restarts.
 
@@ -61,7 +61,7 @@ The environment variables `GITHUB_TOKEN` and `GITHUB_REPO` must be added in Rend
 I also considered [Turso](https://turso.tech/) but dropped it as it would required modifications to the existing implementation.
 
 ## Result
-The commits [d3fbea149](https://github.com/abdullah85/metallictrends/commit/d3fbea149f928582323de6e02a8ef8ac781f9337) and [be946db3](https://github.com/abdullah85/metallictrends/commit/be946db3890a39ddca3a3c4c9fdc858bfc229a7a) were pushed to the to the `main` branch of the private Github Repo as well. Then, we rebased the `deploy` branch on to the `main` branch to ensure the code gets updated. This is then deploys to Render automatically.
+The commits [d3fbea149](https://github.com/abdullah85/metallictrends/commit/d3fbea149f928582323de6e02a8ef8ac781f9337) and [be946db3](https://github.com/abdullah85/metallictrends/commit/be946db3890a39ddca3a3c4c9fdc858bfc229a7a) were pushed to the to the `main` branch of the private Github Repo. Then, we rebased the `deploy` branch on to the `main` branch to ensure the code gets updated. This is then deployed to Render automatically when the `deploy` branch is pushed to Github.
 
 ### Automatic Deployment without Token Set
 
