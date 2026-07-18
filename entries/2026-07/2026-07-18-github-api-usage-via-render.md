@@ -18,7 +18,7 @@ We observe that around two commits are made per day in the background and output
 
 <img width="1345" height="737" alt="image" src="https://github.com/user-attachments/assets/827c7360-d132-48ed-a114-71b24c60d252" />
 
-The above usage is due to the db dump from within the production site as per the [d3fbea149](https://github.com/abdullah85/metallictrends/commit/d3fbea149f928582323de6e02a8ef8ac781f9337) commit.
+The above usage is due to the db dump via [d3fbea149](https://github.com/abdullah85/metallictrends/commit/d3fbea149f928582323de6e02a8ef8ac781f9337) which was refined in [be946db3](https://github.com/abdullah85/metallictrends/commit/be946db3890a39ddca3a3c4c9fdc858bfc229a7a) to ensure that the update occurs only if needed.
 
 
 ### Output Bandwidth Anomaly
@@ -38,7 +38,7 @@ There is a need to review the expected Github API usage and see if it can be imp
 
 The API usage is much better and in control now as we are able to restrict it to about two per day.
 
-The output bandwidth of 3.78 mb is what is to be expected with the current implementation.
+The output bandwidth of around 5 mb is what is to be expected with the current implementation.
 
 We need to modify [d3fbea149](https://github.com/abdullah85/metallictrends/commit/d3fbea149f928582323de6e02a8ef8ac781f9337) and [be946db3](https://github.com/abdullah85/metallictrends/commit/be946db3890a39ddca3a3c4c9fdc858bfc229a7a) for a better approach in terms of clarity as well as Github API usage.
 
