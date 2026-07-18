@@ -1,6 +1,6 @@
 # Explore API Usage due to Render Deployment
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-14-debug-api-usage.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-07-14-debug-api-usage.md) · [Next](./2026-07-18-github-api-usage-via-render.md)
 
 Date: 2026-07-15 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commits: [d3fbea149](https://github.com/abdullah85/metallictrends/commit/d3fbea149f928582323de6e02a8ef8ac781f9337), [be946db3](https://github.com/abdullah85/metallictrends/commit/be946db3890a39ddca3a3c4c9fdc858bfc229a7a)
 
