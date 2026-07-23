@@ -1,7 +1,7 @@
 # SSR via FastAPI for the Landing Page
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-18-github-api-usage-via-render.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-07-18-github-api-usage-via-render.md)  · [Next](./2026-07-23-migrations-for-backfill-on-render.md)
 
 Date: 2026-07-18 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commits: [b4a2b2dd0](https://github.com/abdullah85/metallictrends/commit/b4a2b2dd00b4269ec512ae019d2949bfdb03874e)
 

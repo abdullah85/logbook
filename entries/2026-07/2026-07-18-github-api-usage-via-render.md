@@ -49,6 +49,6 @@ The focus now is on efficiency, clarity as well as clean code as the current ver
 ---
 · Continues from: [Explore API Usage Render Deployment](./2026-07-15-explore-api-usage-render-deployment.md)
 
-· Continued in: <!-- filled in later, once a follow-up entry exists -->
+· Continued in: [Migrations for backfill](./2026-07-23-migrations-for-backfill-on-render.md)
 
 Tags: #metals.dev #fastapi #github-api
