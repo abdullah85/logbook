@@ -2,6 +2,7 @@
 
 _Listed by write order; dates shown are work dates, so they may not be in strict order._
 
+- **2026-07-19** — [Migrations for Backfill on Render](entries/2026-07/2026-07-23-migrations-for-backfill-on-render.md) — #fastapi #metals.dev #github-api #render #migrations
 - **2026-07-18** — [SSR via FastAPI for the Landing Page](entries/2026-07/2026-07-20-ssr-via-fastapi-landing-page.md) — #ssr #fastapi #clean-code
 - **2026-07-18** — [API Usage via Render Updates](entries/2026-07/2026-07-18-github-api-usage-via-render.md) — #metals.dev #fastapi #github-api
 - **2026-07-15** — [Explore API Usage due to Render Deployment](entries/2026-07/2026-07-15-explore-api-usage-render-deployment.md) — #api #fastapi #metals.dev #render #github-api
