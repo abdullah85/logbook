@@ -8,7 +8,7 @@ Date: YYYY-MM-DD <!-- · Repo: [repo-name](https://github.com/username/repo-name
 What problem existed, or what I set out to do. 1–3 sentences.
 
 ## Concepts
-Ideas, terms, or tools I came across — and how they relate to things I already knew. 
+Ideas, terms, or tools I came across — and how they relate to things I already knew.
 
 ## Decision
 What I chose to do — and what I considered but didn't do, and why.

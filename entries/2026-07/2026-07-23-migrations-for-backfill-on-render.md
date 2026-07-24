@@ -1,7 +1,7 @@
 # Migrations for Backfill on Render
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-20-ssr-via-fastapi-landing-page.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-07-20-ssr-via-fastapi-landing-page.md)  · [Next](./2026-07-24-insiduous-issue-causing-quota-usage.md) -->
 
 Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [392da263e](https://github.com/abdullah85/metallictrends/commit/392da263e17cc7a54f40dedc4c24fc750db0146a)
 
