@@ -1,7 +1,7 @@
 # Insiduous Issue causing Quota Usage on Render
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-23-migrations-for-backfill-on-render.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-07-23-migrations-for-backfill-on-render.md) · [Next](./2026-07-25-from-gmail-to-resend-for-access-codes.md) -->
 
 Date: 2026-07-21 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [547da27cc](https://github.com/abdullah85/metallictrends/commit/dfb98fd7f00bad236b56050177428f03ad07aeaf)
 <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
