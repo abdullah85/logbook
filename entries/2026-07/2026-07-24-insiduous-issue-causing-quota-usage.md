@@ -3,7 +3,7 @@
 <!-- — describing the event, concepts learnt or progress made. -->
 [Previous](./2026-07-23-migrations-for-backfill-on-render.md) · [Next](./2026-07-25-from-gmail-to-resend-for-access-codes.md) -->
 
-Date: 2026-07-21 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [547da27cc](https://github.com/abdullah85/metallictrends/commit/dfb98fd7f00bad236b56050177428f03ad07aeaf)
+Date: 2026-07-21 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [dfb98fd7f](https://github.com/abdullah85/metallictrends/commit/dfb98fd7f00bad236b56050177428f03ad07aeaf)
 <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
 ## Context
@@ -60,7 +60,7 @@ Since migration is not committed, when Render restarts, that request is attempte
 ## Decision
 <!-- What I chose to do — and what I considered but didn't do, and why. -->
 
-The updated commit [547da27cc](https://github.com/abdullah85/metallictrends/commit/dfb98fd7f00bad236b56050177428f03ad07aeaf) ensures that failed attempts generate migrations as well.
+The updated commit [dfb98fd7f](https://github.com/abdullah85/metallictrends/commit/dfb98fd7f00bad236b56050177428f03ad07aeaf) ensures that failed attempts generate migrations as well.
 ```python
     windows = conn.execute(
         """SELECT start_date, end_date, status, fetched_at FROM backfill_windows
