@@ -2,6 +2,7 @@
 
 _Listed by write order; dates shown are work dates, so they may not be in strict order._
 
+- **2026-07-19** — [Initiate Understanding for Access Codes](entries/2026-07/2026-07-27-initiate-understanding-for-access-codes.md) — #fastapi #access-code #resend
 - **2026-07-19** — [From Gmail to Resend for Access Codes](entries/2026-07/2026-07-25-from-gmail-to-resend-for-access-codes.md) — #smtp #resend #access-code
 - **2026-07-21** — [Insiduous Issue causing Quota Usage on Render](entries/2026-07/2026-07-24-insiduous-issue-causing-quota-usage.md) — #fastapi #metals.dev #api
 - **2026-07-19** — [Migrations for Backfill on Render](entries/2026-07/2026-07-23-migrations-for-backfill-on-render.md) — #fastapi #metals.dev #github-api #render #migrations

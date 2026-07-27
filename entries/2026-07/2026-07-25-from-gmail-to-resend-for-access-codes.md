@@ -1,7 +1,7 @@
 # From Gmail to Resend for Access Codes
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-22-migrations-for-backfill-on-render.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-07-22-migrations-for-backfill-on-render.md) · [Next](./2026-07-27-initiate-understanding-for-access-codes.md)
 
 Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [547da27cc](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a), [445d12d5d](https://github.com/abdullah85/metallictrends/commit/445d12d5dadda24344f14a21721db4a04be58000), [52bdd3813](https://github.com/abdullah85/metallictrends/commit/52bdd381310139967c15728c8ca2861584396036) <!-- · PR #__ --> <!-- · Issue #__ -->
 
