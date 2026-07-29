@@ -1,7 +1,7 @@
 # Form Structure for Access Codes
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-27-initiate-understanding-for-access-codes.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-07-27-initiate-understanding-for-access-codes.md) · [Next](./2026-07-29-auth-request-code.md)
 
 Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [547da27cc](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a) <!-- · PR #__ --> <!-- · Issue #__ -->
 
@@ -105,6 +105,6 @@ We need to check the endpoints for `requestForm` and `verifyForm` corresponding 
 ---
 · Continues from: [Initiate Understanding for Access Codes]((./2026-07-27-initiate-understanding-for-access-codes.md))
 
-· Continued in: <!-- filled in later, once a follow-up entry exists -->
+· Continued in: [Authorization Request Coded](./2026-07-29-auth-request-code.md)
 
 Tags: #fastapi #access-code #resend
