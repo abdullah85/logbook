@@ -80,18 +80,25 @@ def admin_verify_code(body: _VerifyCodeBody, response: Response):
     return {"status": "ok"}
 ```
 
+The process for verification involves:
+* The `get_active_login_code` fetches the last code generated for the `email` provided
+* The check is made to see of number of attempts have exceeded as this is tracked.
+* The `submitted_hash` is computed from the code provided by the user.
+* The `secrets.compare_digest` helps compare the hashes in a secure manner.
+* Once, the code is checked successfully, the `mark_login_code_used` ensures that the code is marked used.
+
 
 ## Notes
 
-We have covered the initial page load for [`api/app.py`](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a?diff=unified#diff-1ee3ead7352ab51af64f5c8bf08dd156660272feedff099364f03c34151866ff), the page that is generated contains two forms corresponding to generating an access code and verifying the generated access code.
+First, We covered the initial page load for [`api/app.py`](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a?diff=unified#diff-1ee3ead7352ab51af64f5c8bf08dd156660272feedff099364f03c34151866ff), and the generated page enables code generation as well as verification.
 
 In this entry, we reviewed the steps involved for generating an access code.
 
-In the next entry, we will evaluate the steps involved for verifying the access code generated above.
+In this entry, we listed the steps involved for verifying the access code generated above.
 
 ---
 · Continues from: [Form Structure for Access Codes](./2026-07-28-form-structure-for-access-codes.md)
 
 · Continued in: <!-- filled in later, once a follow-up entry exists -->
 
-Tags: #fastapi #access-code #request-code
+Tags: #fastapi #access-code #verify-code
