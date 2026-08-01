@@ -9,7 +9,7 @@ Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metalli
 ## Context
 <!-- What problem existed, or what I set out to do. 1–3 sentences. -->
 
-In the [Previous entry](./2026-07-29-auth-request-code.md), we discussed the process for generating an access code. In this entry, we will discuss the process that is followed to verify the generated access code. As in the previous entry let's first review the Javascript code snippet for the frontend below.
+In the [Previous entry](./2026-07-29-auth-request-code.md), we discussed the process for generating an access code when a user provides an email id. In this entry, we will discuss the process that is followed to verify the generated access code. As in the previous entry let's first review the Javascript code snippet for the frontend below.
 
 ```javascript
   verifyForm.addEventListener("submit", async (event) => {
@@ -35,7 +35,7 @@ In the [Previous entry](./2026-07-29-auth-request-code.md), we discussed the pro
 
 ```
 
-Review the logic for generating the access code in [`src/metallictrends/api/app.py`](https://github.com/abdullah85/metallictrends/blob/547da27cc704532fd123d1d66efa7adab8a2bf4a/src/metallictrends/api/app.py) and let's understand each step.
+The logic for verifying the access code is in [`src/metallictrends/api/app.py`](https://github.com/abdullah85/metallictrends/blob/547da27cc704532fd123d1d66efa7adab8a2bf4a/src/metallictrends/api/app.py) and let's understand each step.
 
 
 ## Concepts
@@ -81,12 +81,15 @@ def admin_verify_code(body: _VerifyCodeBody, response: Response):
 ```
 
 The process for verification involves:
-* The `get_active_login_code` fetches the last code generated for the `email` provided
-* The check is made to see of number of attempts have exceeded as this is tracked.
-* The `submitted_hash` is computed from the code provided by the user.
-* The `secrets.compare_digest` helps compare the hashes in a secure manner.
+* The `get_active_login_code` fetches the last code hash generated for the `email` provided
+* The number of attempts made is checked as `increment_login_code_attempts` tracks unsuccesful attempts.
+* The `submitted_hash` is computed from the code provided by the user as the code is never saved in db.
+* The `secrets.compare_digest` helps compare the hashes in a secure manner mitigating timing attacks.
 * Once, the code is checked successfully, the `mark_login_code_used` ensures that the code is marked used.
 
+Note that in the generation phase, we did not save the code in the db and only saved the hashed code.
+
+The hash is computed based on user input dynamically and hence it avoids having to store the access code.
 
 ## Notes
 

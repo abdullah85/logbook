@@ -2,6 +2,7 @@
 
 _Listed by write order; dates shown are work dates, so they may not be in strict order._
 
+- **2026-07-19** — [Authorization Verify Code](entries/2026-08/2026-08-01-auth-verify-code.md) — #fastapi #access-code #verify-code
 - **2026-07-19** — [Authorization Request Code](entries/2026-07/2026-07-29-auth-request-code.md) — #fastapi #access-code #request-code
 - **2026-07-19** — [Form Structure for Access Codes](entries/2026-07/2026-07-28-form-structure-for-access-codes.md) — #fastapi #access-code #resend
 - **2026-07-19** — [Initiate Understanding for Access Codes](entries/2026-07/2026-07-27-initiate-understanding-for-access-codes.md) — #fastapi #access-code #resend
