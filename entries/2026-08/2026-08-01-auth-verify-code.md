@@ -41,7 +41,7 @@ The logic for verifying the access code is in [`src/metallictrends/api/app.py`](
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
-Let's review the code for the `/admin/auth/request-code` endpoint listed below.
+Let's review the code for the `/admin/auth/verify-code` endpoint listed below.
 
 
 ```python
@@ -95,7 +95,7 @@ The hash is computed based on user input dynamically and hence it avoids having 
 
 First, We covered the initial page load for [`api/app.py`](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a?diff=unified#diff-1ee3ead7352ab51af64f5c8bf08dd156660272feedff099364f03c34151866ff), and the generated page enables code generation as well as verification.
 
-In this entry, we reviewed the steps involved for generating an access code.
+In the previous entry, we reviewed the steps involved for generating an access code.
 
 In this entry, we listed the steps involved for verifying the access code generated above.
 
