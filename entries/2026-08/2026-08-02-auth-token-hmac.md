@@ -1,4 +1,4 @@
-# Authorization Token Generation
+# Authorization Token HMAC
 
 <!-- — describing the event, concepts learnt or progress made. -->
 [Previous](./2026-08-01-auth-verify-code.md)  <!-- · [Next](link to the follow-up entry, once created) -->
