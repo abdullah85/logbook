@@ -1,7 +1,7 @@
 # Authorization Token HMAC
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-08-01-auth-verify-code.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-01-auth-verify-code.md) · [Next](./2026-08-03-auth-token-usage.md)
 
 Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [547da27cc](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a) <!-- · PR #__ --> <!-- · Issue #__ -->
 
@@ -63,6 +63,6 @@ We need to further review the [hmac](https://docs.python.org/3.12/library/hmac.h
 ---
 · Continues from: [Auth Verify Code](./2026-08-01-auth-verify-code.md)
 
-· Continued in: <!-- filled in later, once a follow-up entry exists -->
+· Continued in: [Auth Token Usage](./2026-08-03-auth-token-usage.md)
 
 Tags: #fastapi #token #hmac
