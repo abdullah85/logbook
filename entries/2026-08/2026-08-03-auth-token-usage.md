@@ -1,7 +1,7 @@
 # Authorization Token Usage
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-08-02-auth-token-hmac.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-02-auth-token-hmac.md) · [Next](2026-08-04-review-access-codes.md)
 
 Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [547da27cc](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a) <!-- · PR #__ --> <!-- · Issue #__ -->
 
