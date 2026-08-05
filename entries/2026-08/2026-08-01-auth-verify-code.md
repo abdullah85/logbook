@@ -1,7 +1,7 @@
 # Authorization Verify Code
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-07-29-auth-request-code.md) · [Next](./2026-08-02-auth-token-hmac.md)
+[Previous](../2026-07/2026-07-29-auth-request-code.md) · [Next](./2026-08-02-auth-token-hmac.md)
 
 Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [547da27cc](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a) <!-- · PR #__ --> <!-- · Issue #__ -->
 
@@ -9,7 +9,7 @@ Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metalli
 ## Context
 <!-- What problem existed, or what I set out to do. 1–3 sentences. -->
 
-In the [Previous entry](./2026-07-29-auth-request-code.md), we discussed the process for generating an access code when a user provides an email id. In this entry, we will discuss the process that is followed to verify the generated access code. As in the previous entry let's first review the Javascript code snippet for the frontend below.
+In the [Previous entry](../2026-07/2026-07-29-auth-request-code.md), we discussed the process for generating an access code when a user provides an email id. In this entry, we will discuss the process that is followed to verify the generated access code. As in the previous entry let's first review the Javascript code snippet for the frontend below.
 
 ```javascript
   verifyForm.addEventListener("submit", async (event) => {
@@ -100,7 +100,7 @@ In the previous entry, we reviewed the steps involved for generating an access c
 In this entry, we listed the steps involved for verifying the access code generated above.
 
 ---
-· Continues from: [Auth Request Code](./2026-07-29-auth-request-code.md)
+· Continues from: [Auth Request Code](../2026-07/2026-07-29-auth-request-code.md)
 
 · Continued in: <!-- filled in later, once a follow-up entry exists -->
 
