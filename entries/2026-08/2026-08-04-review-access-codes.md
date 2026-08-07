@@ -30,6 +30,7 @@ Let's review the steps from the user's perspective, with steps involved annotate
 + Subsequent visits to the `/admin` endpoint after generating the code above
   + This will generate the page **after** checking if token is correct or not tampered with.
 + When the user logs out or if the time (within the token as well as the backend) expires,
+  + The `_verify_session` function ensures that the token is ignored
 
 
 ## Notes
