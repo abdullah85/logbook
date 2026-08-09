@@ -1,7 +1,7 @@
 # Review Access Code
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-08-03-auth-token-usage.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-03-auth-token-usage.md) · [Next](./2026-08-09-binary-search-python.md)
 
 Date: 2026-07-19 · Repo: [metallictrends](https://github.com/abdullah85/metallictrends) · Commit: [547da27cc](https://github.com/abdullah85/metallictrends/commit/547da27cc704532fd123d1d66efa7adab8a2bf4a) <!-- · PR #__ --> <!-- · Issue #__ -->
 
