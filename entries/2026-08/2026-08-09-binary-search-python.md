@@ -1,7 +1,7 @@
 # Python Bisect Module
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-08-04-review-access-codes.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-04-review-access-codes.md) · [Next](./2026-08-10-binary-search-template.md)
 
 Date: 2026-08-09 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
@@ -87,6 +87,6 @@ Refer the [bisect](https://docs.python.org/3/library/bisect.html) module for Pyt
 ---
 · Continues from:
 
-· Continued in: <!-- filled in later, once a follow-up entry exists -->
+· Continued in: [Binary Search Python](././2026-08-09-binary-search-python.md)
 
 Tags: #binary-search #bisect #algorithms #python #programming
