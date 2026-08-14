@@ -28,7 +28,9 @@ def binary_search_recursive(search_space, left, right) -> int:
 
     # Termination condition
     if left == right:
-       return left
+      if condition(search_space, left):
+          return (left - 1)
+      return left
 
     # Compute the middle element index 
     mid = left + (right - left) // 2
