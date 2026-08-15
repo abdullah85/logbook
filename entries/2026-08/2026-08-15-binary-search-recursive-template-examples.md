@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-08-12-binary-recursive-redefined.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-11-binary-search-recursive.md)  <!-- · [Next](link to the follow-up entry, once created) -->
 
 Date: 2026-08-15 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
@@ -66,7 +66,7 @@ The `search_space` conists of a list of elements and a target as illustrated in 
 A recursive definition for binary search template with examples for the easy cases.
 
 ---
-· Continues from: [Binary Recursive Search Template Redefined](./2026-08-12-binary-recursive-redefined.md)
+· Continues from: [Binary Search Recursive](././2026-08-11-binary-search-recursive.md)
 
 · Continued in:
 
