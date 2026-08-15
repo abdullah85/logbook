@@ -1,25 +1,19 @@
-# Binary Search Recursion Template, Redefined
+# Binary Search Recursion Template Examples
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-08-11-binary-search-recursive.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-12-binary-recursive-redefined.md)  <!-- · [Next](link to the follow-up entry, once created) -->
 
-Date: 2026-08-12 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
+Date: 2026-08-15 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
 ## Context
 
 <!-- What problem existed, or what I set out to do. 1–3 sentences. -->
 
-I had a closer look at the [Binary Search Template](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) and read through the examples.
+Recall the [Binary Search Template](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) which provides examples.
 
-I guess my presentation of the recursive approach in the [previous entry](./2026-08-11-binary-search-recursive.md), can be improved.
+Recall the recursive template from the [previous entry](./2026-08-11-binary-search-recursive.md) below.
 
-Let's try and improve the clarity and make it more generic.
-
-## Concepts
-<!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
-
-Let's redefine the binary search template with a recursive function below.
 
 ```python
 def binary_search_recursive(search_space, left, right) -> int:
@@ -42,21 +36,37 @@ def binary_search_recursive(search_space, left, right) -> int:
         return binary_search(search_space, (mid+1), right)
 ```
 
-Now, we have three aspects to consider as mentioned in the comments.
- * The termination condition to indicate the final result
- * The computation of the middle element index
- * The recursive invocation with reduced search space
 
-The above allows for a generic search space instead of just an array.
 
-This should further clarify the template and make it easier to recall or implement.
+Let's work through the examples from the original article.
+
+## Concepts
+<!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
+
+Let's run through the examples with the recursive template provided earlier.
+
+For each example problem, we must define the `search_space`, `condition` and maybe tweak the termination condition.
+
+### First Bad Version
+
+Define the condition as `is_bad_version(n, i)` and the `search_space` is implicit for a given `n` as an integer.
+
+### Square Root
+
+Define the condition as `condition = lambda n: lambda x: x*x > n` with `n` representing the search space.
+
+### Search Insert Position
+
+Define the condition as `cond = lambda lst: (lambda target: (lambda x : lst[x] > target))` with three variables.
+
+The `search_space` conists of a list of elements and a target as illustrated in the condition function above.
 
 ## Notes
 
-A recursive definition for a binary search template which may require further tweaking.
+A recursive definition for binary search template with examples for the easy cases.
 
 ---
-· Continues from: [Binary Search Template](./2026-08-10-binary-search-template.md)
+· Continues from: [Binary Recursive Search Template Redefined](./2026-08-12-binary-recursive-redefined.md)
 
 · Continued in:
 
