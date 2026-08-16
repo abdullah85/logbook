@@ -1,4 +1,4 @@
- # Binary Search Template
+# Binary Search Template
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
