@@ -1,7 +1,7 @@
 # Binary Search Recursion Template with Recursion
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-08-10-binary-search-template.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-10-binary-search-template.md) · [Next](./2026-08-15-binary-search-recursive-template-examples.md)
 
 Date: 2026-08-11 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 

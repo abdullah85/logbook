@@ -2,6 +2,10 @@
 
 _Listed by write order; dates shown are work dates, so they may not be in strict order._
 
+- **2026-08-15** — [Binary Search Recursion Template Examples](entries/2026-08/2026-08-15-binary-search-recursive-template-examples.md) — #binary-search #algorithms #python #programming #generic
+- **2026-08-11** — [Binary Search Recursion Template with Recursion](entries/2026-08/2026-08-11-binary-search-recursive.md) — #binary-search #algorithms #python #programming #generic
+- **2026-08-10** — [ # Binary Search Template](entries/2026-08/2026-08-10-binary-search-template.md) — #binary-search #algorithms #python #programming #generic
+- **2026-08-09** — [Python Bisect Module](entries/2026-08/2026-08-09-binary-search-python.md) — #binary-search #bisect #algorithms #python #programming
 - **2026-07-19** — [Review Access Code](entries/2026-08/2026-08-04-review-access-codes.md) — #fastapi #token #hmac
 - **2026-07-19** — [Authorization Token Usage](entries/2026-08/2026-08-03-auth-token-usage.md) — #fastapi #token #hmac
 - **2026-07-19** — [Authorization Token HMAC](entries/2026-08/2026-08-02-auth-token-hmac.md) — #fastapi #token #hmac

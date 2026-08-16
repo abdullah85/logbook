@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-08-09-binary-search-python.md)  <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-09-binary-search-python.md) · [Next](./2026-08-11-binary-search-recursive.md)
 
 Date: 2026-08-10 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
