@@ -1,7 +1,7 @@
 # Python Bisect Module
 
 <!-- — describing the event, concepts learnt or progress made. -->
-[Previous](./2026-08-04-review-access-codes.md) · [Next](./2026-08-10-binary-search-template.md)
+[Previous](./2026-08-04-review-access-codes.md) · [Next](./2026-08-17-binary-search-template.md)
 
 Date: 2026-08-09 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
