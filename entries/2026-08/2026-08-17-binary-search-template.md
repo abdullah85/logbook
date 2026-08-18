@@ -89,9 +89,24 @@ def isBadVersion(n):
 Now, we can reuse the template we defined earlier by defining `last_good_version` as below.
 
 ```python
-
+condition = lambda search_space, value: isBadVersion(value)
+last_good_version = lambda start, end: binary_search_recursive(None, condition, start, end)
 ```
 
+The function produces the required results.
+
+```python
+> last_good_version(1, 1500)
+194
+> last_good_version(1, 95)
+95
+> import math
+> FIRST_GOOD_VERSION = math.inf
+> last_good_version(1, 1500)
+1500
+```
+
+The edge cases are handled appropriately.
 
 ## Notes
 
