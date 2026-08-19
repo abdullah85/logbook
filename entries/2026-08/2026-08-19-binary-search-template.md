@@ -2,9 +2,9 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-08-09-binary-search-python.md)<!-- [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-09-binary-search-python.md) <!-- · [Next](link to the follow-up entry, once created) -->
 
-Date: 2026-08-17 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
+Date: 2026-08-19 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
 ## Context
 
@@ -81,7 +81,7 @@ Let's review the Python code below that encodes the required API below.
 FIRST_BAD_VERSION = 195
 
 def isBadVersion(n):
-  if n>= FIRST_BAD_VERSION:
+  if n >= FIRST_BAD_VERSION:
     return True
   return False
 ```
@@ -93,7 +93,9 @@ condition = lambda search_space, value: isBadVersion(value)
 last_good_version = lambda start, end: binary_search_recursive(None, condition, start, end)
 ```
 
-The function produces the required results.
+The `search_space` is represented by `None` and the condition function needs only the `value` as input.
+
+The function produces the required results as shown below.
 
 ```python
 > last_good_version(1, 1500)
@@ -106,12 +108,34 @@ The function produces the required results.
 1500
 ```
 
-The edge cases are handled appropriately.
+The edge cases are handled appropriately especially when there is no bad version.
+
+Now, let's define the `first_bad_version` appropriately as below.
+
+```python
+first_bad_version = lambda start, end: -1 if (lg := last_good_version(start, end)) == end else lg + 1
+```
+
+The above ensures that if all versions in the provided range are good then `-1` is returned.
+
+```python
+> first_bad_version(1, 1500)
+195
+> first_bad_version(1, 95)
+-1
+> import math
+> FIRST_BAD_VERSION = math.inf
+> first_bad_version(1, 10_15)
+-1
+```
+
+The above illustrates that the behaviour of `first_bad_version` works as expected.
 
 ## Notes
 
 A generic template for binary search was created with recursion, functions that ensures better reusability.
 
+One example has been presented in this entry.
 ---
 · Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
 
