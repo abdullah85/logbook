@@ -13,7 +13,7 @@ Date: 2026-08-20 <!-- · Repo: [repo-name](https://github.com/username/repo-name
 Let's revisit the easy examples in the [Binary Search Template](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) using the approach provided earlier.
 
 
-Let's recall the template provided in the [Previous](./2026-08-19-binary-search-template.md) entry first.
+Let's recall the template provided in the [previous entry](./2026-08-19-binary-search-template.md) first.
 
 ```python
 def binary_search_recursive(search_space, condition, left, right) -> int:
@@ -80,7 +80,7 @@ int_square_root = lambda target: binary_search_recursive(target, condition, 1, t
 ```
 The above definition is quite succinct and easy to recall while being flexible as well.
 
-Note that `search_space` is actually `target` and our recursive definition allows this.
+Note that `search_space` is simply `target` and our recursive definition allows this.
 
 ```python
 > int_square_root(9)
@@ -99,7 +99,9 @@ In this problem, we are given an array without any duplicates.
 
 The objective is to find the index of the array if it exists, otherwise return the index it would be inserted at to keep the array sorted.
 
-The `search_space` here bundles two pieces of information, `nums` and `target`, so rather than indexing into an anonymous tuple with `search_space[0]` / `search_space[1]`, a `NamedTuple` gives us named attribute access instead.
+The `search_space` here bundles two pieces of information, `nums` and `target`, 
+
+Instead of using `search_space[0]` / `search_space[1]`, a `NamedTuple` gives us named attribute access instead.
 
 ```python
 from typing import NamedTuple
@@ -132,6 +134,7 @@ The above examples confirm that the target's own index is returned when present,
 ## Notes
 
 Easy examples provided in the [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were encoded recursively and with appropriate additional functions.
+
 ---
 · Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
 
