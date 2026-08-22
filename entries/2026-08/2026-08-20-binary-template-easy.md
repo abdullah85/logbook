@@ -1,4 +1,4 @@
-# Binary Search Template
+# Binary Search Template Easy Examples
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
@@ -68,7 +68,7 @@ The above ensures that if all versions in the provided range are good then `-1` 
 -1
 ```
 
-I have just summarized the definitions above and refer the [previous entry](./2026-08-19-binary-search-template.md) for further details.
+I have just summarized the definitions above and you may refer the [previous entry](./2026-08-19-binary-search-template.md) for further details.
 
 ### Integer Square Root
 
@@ -99,7 +99,7 @@ In this problem, we are given an array without any duplicates.
 
 The objective is to find the index of the array if it exists, otherwise return the index it would be inserted at to keep the array sorted.
 
-The `search_space` here bundles two pieces of information, `nums` and `target`, 
+The `search_space` here bundles two pieces of information, `nums` and `target` and we need a good representation for that.
 
 Instead of using `search_space[0]` / `search_space[1]`, a `NamedTuple` gives us named attribute access instead.
 
@@ -116,20 +116,26 @@ search_insert_position = lambda nums, target: binary_search_recursive(
 ) + 1
 ```
 
-Unlike `first_bad_version`, no `-1` sentinel is needed here — even the "insert at the end" case falls out of `lg + 1` naturally, since `len(nums)` is itself a valid answer.
+Unlike `first_bad_version`, no `-1` sentinel is needed here with the `condition` defined above.
+
+The correct result of `search_insert_position` ensures that the  index returned is strictly lesser than the target element
+
+Even the edge case for inserting at the end is taken care of as, if all elements are smaller, then `len(nums)` is returned.
 
 ```python
 > search_insert_position([1, 3, 5, 6], 5)
 2
 > search_insert_position([1, 3, 5, 6], 2)
 1
+> search_insert_position([1, 3, 5, 6], 4)
+2
 > search_insert_position([1, 3, 5, 6], 7)
 4
 > search_insert_position([1, 3, 5, 6], 0)
 0
 ```
 
-The above examples confirm that the target's own index is returned when present, matching the expected behaviour of the problem.
+The above examples illustrate the behaviour of the function when provided with various types of input.
 
 ## Notes
 
