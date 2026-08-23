@@ -137,6 +137,11 @@ Even the edge case for inserting at the end is taken care of as, if all elements
 
 The above examples illustrate the behaviour of the function when provided with various types of input.
 
+#### Bisect Module Comparison
+
+With the above, we may also the bisect module [discussed earlier](./2026-08-09-binary-search-python.md) and we can try that out next.
+
+
 ## Notes
 
 Easy examples provided in the [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were encoded recursively and with appropriate additional functions.
