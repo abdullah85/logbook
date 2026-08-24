@@ -40,7 +40,7 @@ Let's define the easy examples defined in the [reference](https://leetcode.com/d
 
 ### First Bad Version 
 
-Recall the First Bad version definition described in the [previous entry](./2026-08-19-binary-search-template.md) here.
+Recall the [First Bad version definition](./2026-08-19-binary-search-template.md#first-bad-version) described in the previous entry as below.
 
 ```python
 FIRST_BAD_VERSION = 195
@@ -68,7 +68,7 @@ The above ensures that if all versions in the provided range are good then `-1` 
 -1
 ```
 
-I have just summarized the definitions above and you may refer the [previous entry](./2026-08-19-binary-search-template.md) for further details.
+I have just summarized the definitions above and you may [refer the previous entry](./2026-08-19-binary-search-template.md#first-bad-version) for further details.
 
 ### Integer Square Root
 
