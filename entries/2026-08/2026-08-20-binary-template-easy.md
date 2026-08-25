@@ -139,8 +139,11 @@ The above examples illustrate the behaviour of the function when provided with v
 
 #### Bisect Module Comparison
 
-With the above, we may also the bisect module [discussed earlier](./2026-08-09-binary-search-python.md) and we can try that out next.
+With the above, we can implement the [bisect module discussed earlier](./2026-08-09-binary-search-python.md) after a few observations.
 
+The first observation is that when the input array does not contain any duplicates then, the function defined earlier basically coincides with `bisect_left` as defined in the `bisect` module provided by Python.
+
+The next part is to solve the general problem and check the behaviour when the input array is allowed to have duplicates.
 
 ## Notes
 
