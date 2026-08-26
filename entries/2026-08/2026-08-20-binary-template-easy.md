@@ -178,6 +178,7 @@ The above illustrates the generic nature of the template defined earlier.
 Easy examples provided in the [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were encoded recursively and with appropriate additional functions.
 
 Python's `bisect_left` and `bisect_right` were captured appropriately within the definition easily.
+
 ---
 · Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
 
