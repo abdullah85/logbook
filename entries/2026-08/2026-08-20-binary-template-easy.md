@@ -139,16 +139,45 @@ The above examples illustrate the behaviour of the function when provided with v
 
 #### Bisect Module Comparison
 
-With the above, we can implement the [bisect module discussed earlier](./2026-08-09-binary-search-python.md) after a few observations.
+We can implement `bisect_left` and `bisect_right` within the [bisect module discussed earlier](./2026-08-09-binary-search-python.md) easily with the above.
 
-The first observation is that when the input array does not contain any duplicates then, the function defined earlier basically coincides with `bisect_left` as defined in the `bisect` module provided by Python.
+First, the function defined earlier basically coincides with `bisect_left` as defined in the `bisect` module provided by Python.
+```python
+> custom_bisect_left = search_insert_position
+> custom_bisect_left([1, 2, 3, 5, 5, 5, 7], 5)
+3
+```
 
-The next part is to solve the general problem and check the behaviour when the input array is allowed to have duplicates.
+The `condition` as defined earlier captures `bisect_left` in the general case correctly.
+
+For, `bisect_right` modifying the `condition` very slightly has the desired effect.
+
+```python
+> condition =  lambda search_space, idx: search_space.nums[idx] > search_space.target
+> custom_bisect_right = lambda nums, target: binary_search_recursive(
+    SearchSpace(nums, target), condition, 0, len(nums) - 1
+) + 1
+
+> custom_bisect_right([1, 2, 3, 5, 5, 5, 7], 5)
+6
+
+> custom_bisect_right([1, 2, 3, 7], 5)
+3
+
+> custom_bisect_right([1, 2, 3, 5, 7], 5)
+4
+
+> custom_bisect_right([1, 2, 3, 5, 7], 15)
+5
+```
+
+The above illustrates the generic nature of the template defined earlier.
 
 ## Notes
 
 Easy examples provided in the [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were encoded recursively and with appropriate additional functions.
 
+Python's `bisect_left` and `bisect_right` were captured appropriately within the definition easily.
 ---
 · Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
 
