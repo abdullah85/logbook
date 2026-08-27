@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-08-09-binary-search-python.md) · [Next](./2026-08-20-binary-template-easy.md)
+[Previous](./2026-08-09-binary-search-python.md) · [Next](./2026-08-27-binary-template-easy.md)
 
 Date: 2026-08-19 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
@@ -139,6 +139,6 @@ One example has been presented in this entry.
 ---
 · Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
 
-· Continued in: [Binary Template Easy](./2026-08-20-binary-template-easy.md)
+· Continued in: [Binary Template Easy](./2026-08-27-binary-template-easy.md)
 
 Tags: #binary-search #algorithms #python #programming #generic

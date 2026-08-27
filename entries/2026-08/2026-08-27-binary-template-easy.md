@@ -33,7 +33,11 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
         return binary_search_recursive(search_space, condition, (mid+1), right)
 ```
 
-Let's define the easy examples defined in the [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) provided earlier.
+The above definition basically returns the greatest value that **does not satisfy** the `condition` provided. 
+
+Refer to the [previous entry](./2026-08-19-binary-search-template.md) for further details on the definition with an example. 
+
+In this entry, we define the easy examples within the  [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) provided earlier.
 
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
@@ -68,7 +72,7 @@ The above ensures that if all versions in the provided range are good then `-1` 
 -1
 ```
 
-I have just summarized the definitions above and you may [refer the previous entry](./2026-08-19-binary-search-template.md#first-bad-version) for further details.
+I have just summarized the definitions above and [the previous entry](./2026-08-19-binary-search-template.md#first-bad-version) has further details.
 
 ### Integer Square Root
 
@@ -78,9 +82,9 @@ For this problem, define the following functions as below.
 condition = lambda target, value: value * value > target
 int_square_root = lambda target: binary_search_recursive(target, condition, 1, target)
 ```
-The above definition is quite succinct and easy to recall while being flexible as well.
+The above definition is quite succinct and easy to recall, understand or implement.
 
-Note that `search_space` is simply `target` and our recursive definition allows this.
+The `search_space` is simply `target` and our generic definition facilitates this.
 
 ```python
 > int_square_root(9)
@@ -91,11 +95,11 @@ Note that `search_space` is simply `target` and our recursive definition allows 
 4
 ```
 
-The above examples illustrate the actual invocation of the defined program.
+The above examples illustrates sample executions of the `int_square_root` function.
 
 ### Search Insert Position
 
-In this problem, we are given an array without any duplicates.
+In this problem, we are given an array of values in sorted order, without any duplicates.
 
 The objective is to find the index of the array if it exists, otherwise return the index it would be inserted at to keep the array sorted.
 
@@ -118,9 +122,9 @@ search_insert_position = lambda nums, target: binary_search_recursive(
 
 Unlike `first_bad_version`, no `-1` sentinel is needed here with the `condition` defined above.
 
-The correct result of `search_insert_position` ensures that the  index returned is strictly lesser than the target element
+The correct result of `search_insert_position` ensures that the value at the index returned is less than the target.
 
-Even the edge case for inserting at the end is taken care of as, if all elements are smaller, then `len(nums)` is returned.
+If `target` is larger than all elements, then `len(nums)` is returned which is the required result.
 
 ```python
 > search_insert_position([1, 3, 5, 6], 5)
@@ -139,11 +143,14 @@ The above examples illustrate the behaviour of the function when provided with v
 
 #### Bisect Module Comparison
 
-We can implement `bisect_left` and `bisect_right` within the [bisect module discussed earlier](./2026-08-09-binary-search-python.md) easily with the above.
+We can implement `bisect_left` and `bisect_right` [discussed earlier](./2026-08-09-binary-search-python.md) which is part of the  `bisect` module provided by Python.
 
-First, the function defined earlier basically coincides with `bisect_left` as defined in the `bisect` module provided by Python.
+The `search_insert_position` function definition implements `bisect_left` defined in the `bisect` module provided by Python.
+
 ```python
 > custom_bisect_left = search_insert_position
+> custom_bisect_left([1, 2, 3, 5, 7], 5)
+3
 > custom_bisect_left([1, 2, 3, 5, 5, 5, 7], 5)
 3
 ```
@@ -156,28 +163,31 @@ For, `bisect_right` modifying the `condition` very slightly has the desired effe
 > condition =  lambda search_space, idx: search_space.nums[idx] > search_space.target
 > custom_bisect_right = lambda nums, target: binary_search_recursive(
     SearchSpace(nums, target), condition, 0, len(nums) - 1
-) + 1
+)
 
 > custom_bisect_right([1, 2, 3, 5, 5, 5, 7], 5)
 6
-
 > custom_bisect_right([1, 2, 3, 7], 5)
 3
-
 > custom_bisect_right([1, 2, 3, 5, 7], 5)
 4
-
 > custom_bisect_right([1, 2, 3, 5, 7], 15)
 5
 ```
 
 The above illustrates the generic nature of the template defined earlier.
 
+The `binary_search_recursive` definition returns the greatest value that does not satisfy the `condition` provided and this is convenient to define other functions in a reliable and consistent manner.
+
+The subtle differences in the definition of `condition` or in the invoking function like `custom_bisect_left` or `custom_bisect_right` ensure that the required result is achieved correctly.
+
 ## Notes
 
 Easy examples provided in the [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were encoded recursively and with appropriate additional functions.
 
-Python's `bisect_left` and `bisect_right` were captured appropriately within the definition easily.
+Python's `bisect_left` and `bisect_right` were suitably captured with our definition.
+
+The generic recursive approach must be evaluated with more advanced examples next.
 
 ---
 · Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
