@@ -19,7 +19,11 @@ def binary_search(array) -> int:
     def condition(value) -> bool:
         pass
 
-    left, right = min(search_space), max(search_space) # could be [0, n], [1, n] etc. Depends on problem
+    left  = min(search_space)
+    right = max (search_space)
+    # could be [0, n], [1, n] etc.
+    # Depends on problema
+
     while left < right:
         mid = left + (right - left) // 2
         if condition(mid):
@@ -49,9 +53,13 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
 
     # Reduce the search space recursively
     if condition(search_space, mid):
-        return binary_search_recursive(search_space, condition, left, mid)
+        return binary_search_recursive(
+        search_space, condition, left, mid
+        )
     else:
-        return binary_search_recursive(search_space, condition, (mid+1), right)
+        return binary_search_recursive(
+         search_space, condition, (mid+1), right
+        )
 ```
 
 The above requires defining the `search_space` and `condition(search_space, value)` functions.
