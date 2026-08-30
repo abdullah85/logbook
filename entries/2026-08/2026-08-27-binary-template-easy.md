@@ -4,7 +4,7 @@
 
 [Previous](./2026-08-19-binary-search-template.md) <!-- · [Next](link to the follow-up entry, once created) -->
 
-Date: 2026-08-20 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
+Date: 2026-08-27 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
 ## Context
 
