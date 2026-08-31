@@ -2,7 +2,8 @@
 
 _Listed by write order; dates shown are work dates, so they may not be in strict order._
 
-- **2026-08-20** — [Binary Search Template Easy Examples](entries/2026-08/2026-08-27-binary-template-easy.md) — #binary-search #algorithms #python #programming #generic
+- **2026-08-31** — [Binary Search Ship within D days](entries/2026-08/2026-08-31-binary-ship-days.md) — #binary-search #algorithms #python #programming #generic
+- **2026-08-27** — [Binary Search Template Easy Examples](entries/2026-08/2026-08-27-binary-template-easy.md) — #binary-search #algorithms #python #programming #generic
 - **2026-08-19** — [Binary Search Template](entries/2026-08/2026-08-19-binary-search-template.md) — #binary-search #algorithms #python #programming #generic
 - **2026-08-09** — [Python Bisect Module](entries/2026-08/2026-08-09-binary-search-python.md) — #binary-search #bisect #algorithms #python #programming
 - **2026-07-19** — [Review Access Code](entries/2026-08/2026-08-04-review-access-codes.md) — #fastapi #token #hmac
