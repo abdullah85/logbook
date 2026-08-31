@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-08-19-binary-search-template.md) <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-08-19-binary-search-template.md) · [Next](./2026-08-31-binary-ship-days.md)
 
 Date: 2026-08-27 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
@@ -192,6 +192,6 @@ The generic recursive approach must be evaluated with more advanced examples nex
 ---
 · Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
 
-· Continued in:
+· Continued in: [Capacity to Ship within D days](./2026-08-31-binary-ship-days.md)
 
 Tags: #binary-search #algorithms #python #programming #generic
