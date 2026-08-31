@@ -1,4 +1,4 @@
-# Binary Search Ship within D days
+# Binary Search - Ship within D days
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
@@ -10,15 +10,13 @@ Date: 2026-08-31 <!-- · Repo: [repo-name](https://github.com/username/repo-name
 
 <!-- What problem existed, or what I set out to do. 1–3 sentences. -->
 
-Let's revisit the easy examples in the [Binary Search Template](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) using the approach provided earlier.
-
 In the [previous entry](2026-08-19-binary-search-template.md) we defined all the easy examples in the [Binary Search Template](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) with a recursive definition for the template.
 
 Hopefully, it is much easier to understand the solutions provided.
 
 In this entry, we will explore one example in the advanced application section of the [reference article](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) provided earlier.
 
-The problem statement involves [identifying the minimum capacity](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/) for a ship to ensure that it is able to ship all items arriving in a conveyor belt with specified weights in `D` days.
+The problem involves [identifying the minimum capacity](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/) for a ship to ensure that it is able to ship all items arriving in a conveyor belt with specified weights in `D` days.
 
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
