@@ -41,6 +41,18 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
         return binary_search_recursive(search_space, condition, (mid+1), right)
 ```
 
+To define the search space use `NamedTuple` 
+
+```python
+from typing import NamedTuple
+
+class SearchSpace(NamedTuple):
+    waeights: list[int]
+    capacity: int
+
+```
+
+The key idea is to reformulate the problem.
 
 ## Notes
 
