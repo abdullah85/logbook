@@ -52,7 +52,11 @@ class SearchSpace(NamedTuple):
 
 ```
 
-The key idea is to reformulate the problem.
+The key idea is to reformulate the problem as the capacity is a monotonic measure.
+
+That is, if a ship with capacity `c` can ship within `D` days then any ship with greater capacity can do so as well.
+
+Another observation is to greedily pack an item on the ship if the capacity of the ship allows it.
 
 ## Notes
 
