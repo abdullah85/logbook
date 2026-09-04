@@ -56,6 +56,25 @@ That is, if a ship with capacity `c` can ship within `D` days then any ship with
 
 Another observation is to greedily pack an item on the ship if the capacity of the ship allows it.
 
+Let's review the solution provided in the reference earlier.
+
+```python
+def feasible(weights, capacity, D):
+   ...:     days = 1
+   ...:     total = 0
+   ...:     for weight in weights:
+   ...:         if total + weight <= capacity:
+   ...:             total += weight
+   ...:         else:
+   ...:             total = weight
+   ...:             days += 1
+   ...:             if days > D:
+   ...:                 return False
+   ...:     return True
+```
+
+This definition is not compatible with our `condition` function defined earlier and we need to revisit it.
+
 ## Notes
 
 The first example among the  [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were encoded recursively and with appropriate additional functions.
