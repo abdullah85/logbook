@@ -77,7 +77,9 @@ This definition is compatible with our `condition` function and we can complete 
 
 ```python
 condition = feasible
-ship_d_days=lambda weights,days: binary_search_recursive(SearchSpace(weights, days), condition, max(weights), sum(weights)) + 
+ship_d_days=lambda weights,days: binary_search_recursive(
+     SearchSpace(weights, days), condition, max(weights), sum(weights)
+   ) + 1
 ```
 The result of `binary_search_recursive` will provide the largest value that does not satisfy the condition.
 
