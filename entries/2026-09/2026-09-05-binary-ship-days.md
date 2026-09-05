@@ -4,7 +4,7 @@
 
 [Previous](./2026-08-27-binary-template-easy.md) <!-- · [Next](link to the follow-up entry, once created) -->
 
-Date: 2026-08-31 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
+Date: 2026-09-05 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
 ## Context
 
