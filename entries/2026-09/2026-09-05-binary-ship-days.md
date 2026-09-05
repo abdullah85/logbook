@@ -46,7 +46,7 @@ from typing import NamedTuple
 
 class SearchSpace(NamedTuple):
     waeights: list[int]
-    capacity: int
+    D: int      # D is the target number of days across all capacities
 
 ```
 
@@ -59,26 +59,49 @@ Another observation is to greedily pack an item on the ship if the capacity of t
 Let's review the solution provided in the reference earlier.
 
 ```python
-def feasible(weights, capacity, D):
-   ...:     days = 1
-   ...:     total = 0
-   ...:     for weight in weights:
-   ...:         if total + weight <= capacity:
-   ...:             total += weight
-   ...:         else:
-   ...:             total = weight
-   ...:             days += 1
-   ...:             if days > D:
-   ...:                 return False
-   ...:     return True
+def feasible(search_space, capacity):
+    days = 1
+    total = 0
+    for weight in search_space.weights:
+        if total + weight <= capacity:
+            total += weight
+        else:
+            total = weight
+            days += 1
+            if days > search_space.D:
+                return False
+    return True
 ```
 
-This definition is not compatible with our `condition` function defined earlier and we need to revisit it.
+This definition is compatible with our `condition` function and we can complete the remaining definitions as below.
+
+```python
+condition = feasible
+ship_d_days=lambda weights,days: binary_search_recursive(SearchSpace(weights, days), condition, max(weights), sum(weights)) + 
+```
+The result of `binary_search_recursive` will provide the largest value that does not satisfy the condition.
+
+That is, the result of the recursive call returns the largest capacity of a ship that **cannot** ship within `D` days.
+
+Hence, we need to increment by 1 to obtain the lowest capacity that is able to ship within `D` days.
+
+```python
+> weights = [1,2,3,4,5,6,7,8,9,10]; days = 5; ship_d_days(weights, days)
+15
+
+> weights = [3,2,2,4,1,4]; days = 3; ship_d_days(weights, days)
+6
+
+> weights = [1,2,3,1,1]; days = 4; ship_d_days(weights, days)
+3
+```
+
+The running time is in order of `O(n * log(n))` where `n` is the number of weights.
+
 
 ## Notes
 
-The first example among the  [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were encoded recursively and with appropriate additional functions.
-
+The first example among the advanced exampled in [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were reviewed.
 
 ---
 · Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
