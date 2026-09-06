@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-08-27-binary-template-easy.md) <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](../2026-08/2026-08-27-binary-template-easy.md) <!-- · [Next](link to the follow-up entry, once created) -->
 
 Date: 2026-09-05 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
@@ -10,7 +10,7 @@ Date: 2026-09-05 <!-- · Repo: [repo-name](https://github.com/username/repo-name
 
 <!-- What problem existed, or what I set out to do. 1–3 sentences. -->
 
-In the [previous entry](2026-08-19-binary-search-template.md) we defined all the easy examples in the [Binary Search Template](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) with a recursive definition for the template.
+In the [previous entry](../2026-08/2026-08-19-binary-search-template.md) we defined all the easy examples in the [Binary Search Template](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) with a recursive definition for the template.
 
 In this entry, we will explore one example in the advanced application section of the [reference article](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) provided earlier.
 
@@ -19,7 +19,7 @@ The problem involves [identifying the minimum capacity](https://leetcode.com/pro
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
-Let's recall the template defined [earlier](./2026-08-19-binary-search-template.md) first.
+Let's recall the template defined [earlier](../2026-08/2026-08-19-binary-search-template.md) first.
 
 ```python
 def binary_search_recursive(search_space, condition, left, right) -> int:
@@ -106,7 +106,7 @@ The running time is in order of `O(n * log(n))` where `n` is the number of weigh
 The first example among the advanced exampled in [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were reviewed.
 
 ---
-· Continues from: [Binary Search Python](./2026-08-09-binary-search-python.md)
+· Continues from: [Binary Search Python](../2026-08/2026-08-09-binary-search-python.md)
 
 · Continued in:
 
