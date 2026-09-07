@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](../2026-08/2026-08-27-binary-template-easy.md) <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](../2026-08/2026-08-27-binary-template-easy.md) · [Next](./2026-09-07-binary-split-array-largest-sum.md)
 
 Date: 2026-09-05 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
