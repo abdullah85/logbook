@@ -20,8 +20,29 @@ The problem seems very difficult at first glance but is quite similar to the pre
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
-Let's assume that we have the [`binary_search_recursive`](../2026-08/2026-08-19-binary-search-template.md) function defined earlier.
+Let's revisit the `binary_search_recursive` [definition](../2026-08/2026-08-19-binary-search-template.md) as below.
 
+```python
+def binary_search_recursive(search_space, condition, left, right) -> int:
+    # Termination condition
+    if left == right:
+      if condition(search_space, left):
+          return (left - 1)
+      return left
+
+    # Compute the middle element index
+    mid = left + (right - left) // 2
+
+    # Reduce the search space recursively
+    if condition(search_space, mid):
+        return binary_search_recursive(
+        search_space, condition, left, mid
+        )
+    else:
+        return binary_search_recursive(
+         search_space, condition, (mid+1), right
+        )
+```
 
 To capture the search space, we use `NamedTuple` again as shown below.
 ```python
@@ -29,7 +50,7 @@ from typing import NamedTuple
 
 class SearchSpace(NamedTuple):
     nums: list[int]
-    m: int      # the number of subarrays
+    m: int      # the required number of subarrays
 ```
 
 The main challenge of this problem is to reformulate it correctly.
@@ -44,27 +65,27 @@ def feasible(search_space, threshold):
     if total > threshold: # increment the number of subarrays
         total = num
         count += 1
-        if count > m:
+        if count > search_space.m:
             return False
-    return True
+  return True
 ```
 
-The final solution 
+With the `binary_search_recursive` defined earlier, we could have the definitions below.
 
 ```python
 condition = feasible
 split_into_subarrays=lambda nums, m: binary_search_recursive(
      SearchSpace(nums, m), condition, max(nums), sum(nums)
-   ) + 1
+   ) + 1 # Increment by 1 to undo the decrement in recursive definition.
 ```
 
-The solution is almost identical to the previous entry
+However, if we apply the definition to the example problem, we get the required result below.
 ```python
->  nums = [7,2,5,10,8]; k = 2; split_into_subarrays(nums, k)
-10
+> nums = [7,2,5,10,8]; k = 2; split_into_subarrays(nums, k)
+18
 ```
 
-The above is actually incorrect and we need to review the solution again.
+Thus, the problem of splitting arrays is quite similar to the previous problem with respect to shipping.
 
 ## Notes
 Another advanced example from [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was reviewed.
