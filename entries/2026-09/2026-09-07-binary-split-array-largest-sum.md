@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](./2026-09-05-binary-ship-days.md) <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](./2026-09-05-binary-ship-days.md) · [Next](./2026-09-09-binary-search-review.md)
 
 Date: 2026-09-07 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
