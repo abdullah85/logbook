@@ -28,7 +28,7 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
     # Reduce the search space recursively
     if condition(search_space, mid):
         return binary_search_recursive(
-        search_space, condition, left, mid
+          search_space, condition, left, mid
         )
     else:
         return binary_search_recursive(
@@ -45,12 +45,9 @@ split_into_subarrays=lambda nums, m: binary_search_recursive(
    ) + 1 # Increment by 1 to undo the decrement in recursive definition.
 ```
 
-The issue is that for the problem above the solution is not clean enough.
+The issue is that for the problem above the solution is not clean due to the terminiation condition.
 
 Let's revise the `binary_search_recursive` definition for a cleaner approach.
-
-## Concepts
-<!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
 ```python
 def binary_search_recursive(search_space, condition, left, right) -> int:
@@ -74,7 +71,12 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
 
 The above definition is much better to understand, remember and recall.
 
-Let's revisit the Split array to minimize the largest sum problem as below.
+
+## Concepts
+<!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
+
+
+Let's revisit the [problem to Split an array](./2026-09-07-binary-split-array-largest-sum.md) minimizing the largest sum as below.
 
 ```python
 from typing import NamedTuple
@@ -108,7 +110,11 @@ The increment at the end is not needed with the new recursive function.
 18
 ```
 
-The recursive function returns the lowest value satisfying the condition if one exists. If no solution exists, then I guess it will return the last element in the sequence. We need to review the solution in depth next.
+The recursive function returns the lowest value satisfying the condition, if one exists. 
+
+If no solution exists, then I guess it will return the last element in the sequence. 
+
+We need to review the earlier examples and modify them with this recursive definition.
 
 ## Notes
 Another advanced example from [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was reviewed.
