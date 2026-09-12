@@ -1,4 +1,4 @@
-# Binary Search - Split Array Largest Sum [Hard]
+# Binary Search - Revisit Recursive Definition
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
@@ -45,7 +45,7 @@ split_into_subarrays=lambda nums, m: binary_search_recursive(
    ) + 1 # Increment by 1 to undo the decrement in recursive definition.
 ```
 
-The issue is that for the problem above the solution is not clean due to the terminiation condition.
+The issue is that for the problem above, the solution is not clean due to the terminiation condition.
 
 Let's revise the `binary_search_recursive` definition for a cleaner approach.
 

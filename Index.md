@@ -2,7 +2,7 @@
 
 _Listed by write order; dates shown are work dates, so they may not be in strict order._
 
-- **2026-09-09** — [Binary Search - Split Array Largest Sum [Hard]](entries/2026-09/2026-09-09-binary-search-review.md) — #binary-search #algorithms #python #programming #generic
+- **2026-09-09** — [Binary Search - Revisit Recursive Definition](entries/2026-09/2026-09-12-binary-search-revisit.md) — #binary-search #algorithms #python #programming #generic
 - **2026-09-07** — [Binary Search - Split Array Largest Sum [Hard]](entries/2026-09/2026-09-07-binary-split-array-largest-sum.md) — #binary-search #algorithms #python #programming #generic
 - **2026-09-05** — [Binary Search - Ship within D days](entries/2026-09/2026-09-05-binary-ship-days.md) — #binary-search #algorithms #python #programming #generic
 - **2026-08-27** — [Binary Search Template Easy Examples](entries/2026-08/2026-08-27-binary-template-easy.md) — #binary-search #algorithms #python #programming #generic
