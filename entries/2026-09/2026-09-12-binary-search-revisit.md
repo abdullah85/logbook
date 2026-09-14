@@ -4,7 +4,7 @@
 
 [Previous](./2026-09-07-binary-split-array-largest-sum.md) <!-- · [Next](link to the follow-up entry, once created) -->
 
-Date: 2026-09-09 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
+Date: 2026-09-12 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
 ## Context
 
