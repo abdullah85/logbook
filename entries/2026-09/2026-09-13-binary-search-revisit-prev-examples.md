@@ -4,7 +4,7 @@
 
 [Previous](/entries/2026-09/2026-09-12-binary-search-revisit.md) <!-- · [Next](link to the follow-up entry, once created) -->
 
-Date: 2026-09-13 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
+Date: 2026-09-15 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
 ## Context
 
@@ -32,34 +32,18 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
         )
 ```
 
-The above definition is much better to understand, remember and recall.
+The above definition seems much better to understand, remember and recall.
 
+Let's revisit the various examples presented thus far using the above definition.
 
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
+### Split An Array
 
 Let's revisit the [problem to Split an array](./2026-09-07-binary-split-array-largest-sum.md) minimizing the largest sum as below.
 
 ```python
-from typing import NamedTuple
-
-class SearchSpace(NamedTuple):
-    nums: list[int]
-    m: int      # the required number of subarrays
-
-def feasible(search_space, threshold):
-  total = 0
-  count = 1
-  for num in search_space.nums:
-    total += num
-    if total > threshold: # increment the number of subarrays
-        total = num
-        count += 1
-        if count > search_space.m:
-            return False
-  return True
-
 condition = feasible
 split_into_subarrays=lambda nums, m: binary_search_recursive(
      SearchSpace(nums, m), condition, max(nums), sum(nums)
@@ -75,7 +59,7 @@ The increment at the end is not needed with the new recursive function.
 
 The recursive function returns the lowest value satisfying the condition, if one exists. 
 
-If no solution exists, then I guess it will return the last element in the sequence. 
+If no solution exists, it returns the initial value of `right` used in the invocation.
 
 We need to review the earlier examples and modify them with this recursive definition.
 
