@@ -45,7 +45,7 @@ To define the search space use `NamedTuple`
 from typing import NamedTuple
 
 class SearchSpace(NamedTuple):
-    waeights: list[int]
+    weights: list[int]
     D: int      # D is the target number of days across all capacities
 
 ```
