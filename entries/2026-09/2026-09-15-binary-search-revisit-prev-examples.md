@@ -32,16 +32,21 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
         )
 ```
 
+The above returns the smallest element satisfying the condition if one exists.
+
+If no element in the search space satisfies the condition, the initial `right` index is returned.
+
 The above definition seems much better to understand, remember and recall.
 
-Let's revisit the various examples presented thus far using the above definition.
 
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
+Let's revisit the various examples presented thus far using the above definition starting with the latest first.
+
 ### Split An Array
 
-Let's revisit the [problem to Split an array](./2026-09-07-binary-split-array-largest-sum.md) minimizing the largest sum as below.
+The only change required for [the problem to Split an array](./2026-09-07-binary-split-array-largest-sum.md) is the definition below.
 
 ```python
 condition = feasible
@@ -57,17 +62,46 @@ The increment at the end is not needed with the new recursive function.
 18
 ```
 
+### Ship Within D Days Problem
+
+This problem is similar to the one above and modifications required are minimal as well.
+
+```python
+condition = feasible
+ship_d_days=lambda weights,days: binary_search_recursive(
+      SearchSpace(weights, days), condition, max(weights), sum(weights)
+    )
+```
+
+Running through the examples, the results are verified as below.
+
+```python
+> weights = [1,2,3,1,1]; days = 4; ship_d_days(weights, days)
+3
+
+> weights = [3,2,2,4,1,4]; days = 3; ship_d_days(weights, days)
+6
+
+> weights = [1,2,3,4,5,6,7,8,9,10]; days = 5; ship_d_days(weights, days)
+15
+```
+
+In both problems above, the result is the smallest value satisfying the condition.
+
+### Conclusion
+
 The recursive function returns the lowest value satisfying the condition, if one exists. 
 
 If no solution exists, it returns the initial value of `right` used in the invocation.
 
-We need to review the earlier examples and modify them with this recursive definition.
+Thus, we have reviewed the previous examples with the simpler recursive definition.
 
 ## Notes
-Another advanced example from [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was reviewed.
+
+Simpler recursive definition for various examples in [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were reviewed.
 
 ---
-· Continues from: [Binary Search Ship within D days](./2026-09-05-binary-ship-days.md)
+· Continues from: [Binary Search Revisited](/entries/2026-09/2026-09-12-binary-search-revisit.md)
 
 · Continued in:
 
