@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](/entries/2026-09/2026-09-12-binary-search-revisit.md) <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](/entries/2026-09/2026-09-12-binary-search-revisit.md) <!-- · [Next](/entries/2026-09/2026-09-23-binary-search-revisit-easy-examples.md) -->
 
 Date: 2026-09-15 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
@@ -103,6 +103,6 @@ Simpler recursive definition for various examples in [reference](https://leetcod
 ---
 · Continues from: [Binary Search Revisited](/entries/2026-09/2026-09-12-binary-search-revisit.md)
 
-· Continued in:
+· Continued in: [Binary Search Revisit Easy Examples](/entries/2026-09/2026-09-23-binary-search-revisit-easy-examples.md)
 
 Tags: #binary-search #algorithms #python #programming #generic
