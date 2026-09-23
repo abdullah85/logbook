@@ -43,16 +43,52 @@ We also covered two examples and we now revisit the Easy examples.
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
+### First Bad Version
 
-### Conclusion
+The first bad version is quite straightforward with our definition.
 
+```python
+condition = lambda search_space, value: isBadVersion(value)
+first_bad_version = lambda start, end: -1 if (fbv:= binary_search_recursive(None, condition, start, end) and not isBadVersion(end) else fbv
+```
+
+Let's revisit some example executions.
+
+```python
+> FIRST_BAD_VERSION = 1500
+> first_bad_version(1, 1900)
+1500
+> first_bad_version(1, 190)
+-1
+> FIRST_BAD_VERSION = math.inf
+> first_bad_version(1, 1_000_000)
+-1
+> first_bad_vesion(1, 10**15)
+-1
+```
+
+### Integer Square Root
+
+```python
+> condition = lambda target, value: value*value > target
+> int_square_root = lambda target: 1 if target == 1 else binary_search_recursive(target, condition, 0, target) - 1
+```
+
+```python
+> int_square_root(9)
+3
+> int_square_root(15)
+3
+> int_square_root(16)
+4
+```
 
 ## Notes
 
-Simpler recursive definition for various examples in [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) were reviewed.
+Easy examples provided in the  [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) are slightly more involved to implement with new definition.
 
 ---
-· Continues from: [Binary Search Revisited](/entries/2026-09/2026-09-12-binary-search-revisit.md)
+· Continues from: [Binary Search Revisited](/entries/2026-09/2026-09-15-binary-search-revisit-prev-examples.md)
 
 · Continued in:
 
