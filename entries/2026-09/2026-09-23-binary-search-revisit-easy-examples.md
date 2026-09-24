@@ -38,7 +38,7 @@ If no element in the search space satisfies the condition, the initial `right` i
 
 The above definition seems much better to understand, remember and recall.
 
-We also covered two examples and we now revisit the Easy examples.
+We also covered two examples and we now revisit [the Easy examples](/entries/2026-08/2026-08-27-binary-template-easy.md).
 
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
@@ -82,6 +82,47 @@ Let's revisit some example executions.
 > int_square_root(16)
 4
 ```
+
+### Search Insert Position
+
+For this problem, let's try defining the function as below:
+
+```python
+from typing import NamedTuple
+
+class SearchSpace(NamedTuple):
+    nums: list[int]
+    target: int
+
+condition = lambda search_space, idx: search_space.nums[idx] >= search_space.target
+search_insert_position = lambda nums, target: binary_search_recursive(
+    SearchSpace(nums, target), condition, 0, len(nums) - 1
+)
+```
+
+The above definition seems to work for the most part.
+```python
+> search_insert_position([1, 3, 5, 6], 5)
+2
+> search_insert_position([1, 3, 5, 6], 2)
+1
+> search_insert_position([1, 3, 5, 6], 4)
+2
+> search_insert_position([1, 3, 5, 6], 0)
+0
+```
+
+The only case where it does not work correctly is as below:
+```python
+> search_insert_position([1, 3, 5, 6], 7)
+3
+```
+
+When the element is greater than all elements in the list, it is incorrect.
+
+This is due to the fact that when no element satisfies the condition, the initial right index is returned.
+
+This needs to be handled separately and I guess is the only edge case that needs to be handled with this definition.
 
 ## Notes
 
