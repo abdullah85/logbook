@@ -124,6 +124,21 @@ This is due to the fact that when no element satisfies the condition, the initia
 
 This needs to be handled separately and I guess is the only edge case that needs to be handled with this definition.
 
+```python
+search_insert_position = lambda nums, target: (
+    result_idx + 1 if nums[(result_idx := binary_search_recursive(
+        SearchSpace(nums, target), condition, 0, len(nums) - 1
+    ))] < target else result_idx
+)
+```
+
+The walrus assignment happens inside the condition of the ternary, so `result_idx` is bound before either branch is evaluated - this lets us reuse it in both branches without a second call to `binary_search_recursive`.
+
+```python
+> search_insert_position([1, 3, 5, 6], 7)
+4
+```
+
 ## Notes
 
 Easy examples provided in the  [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) are slightly more involved to implement with new definition.
