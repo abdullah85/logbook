@@ -139,6 +139,42 @@ The walrus assignment happens inside the condition of the ternary, so `result_id
 4
 ```
 
+### Bisect Module Implementation
+
+Let's review the methods for `bisect_left` and `bisect_right` within the `bisect` module.
+
+```python
+> custom_bisect_left = search_insert_position
+> custom_bisect_left([1, 2, 3, 5, 5, 5, 7], 5)
+3
+```
+
+As observed earlier, the `custom_bisect_left` is essentially the same as `search_insert_position` function while to implement the `custom_bisect_right` we would need to redefine the `condition` as done earlier.
+
+```python
+> condition_bisect_right = lambda search_space, idx: search_space.nums[idx] > search_space.target
+> custom_bisect_right = lambda nums, target: (
+    result_idx + 1 if nums[(result_idx := binary_search_recursive(
+        SearchSpace(nums, target), condition_bisect_right, 0, len(nums) - 1
+    ))] <= target else result_idx
+)
+> custom_bisect_right([1, 2, 3, 5, 5, 5, 7], 5)
+6
+```
+
+We define a new condition, `condition_bisect_right`, rather than redefining `condition`, so that `custom_bisect_left` (i.e. `search_insert_position`) continues to work as before.
+
+Also, notice that the edge case check uses `<= target` instead of `< target`, since `bisect_right` must place the insertion point after all elements equal to the target.
+
+When the target is greater than or equal to the maximum element, no index satisfies `condition_bisect_right`, so `binary_search_recursive` returns the last index. The `<= target` check then moves the result one position past the end of the array.
+
+```python
+> custom_bisect_right([1, 2, 3, 5, 5, 5, 7], 7)
+7
+```
+
+Thus, we have implemented the changes for the easy examples with updated definition.
+
 ## Notes
 
 Easy examples provided in the  [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) are slightly more involved to implement with new definition.
