@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](/entries/2026-09/2026-09-15-binary-search-revisit-prev-examples.md) <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](/entries/2026-09/2026-09-15-binary-search-revisit-prev-examples.md) · [Next](/entries/2026-09/2026-09-27-koko-eating-bananas.md)
 
 Date: 2026-09-23 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
