@@ -74,11 +74,11 @@ The above definition is the require function for calculating the required speed.
 23
 ```
 
-The above solution is reduce to applying the binary search template in an elegant way.
+The above solution reduces to applying the binary search template in an elegant way.
 
 ## Notes
 
-The Koko Eating Bananas problem provided in the   [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was discussed in this entry.
+The Koko Eating Bananas problem provided in the [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was discussed and resolved in this entry.
 
 ---
 · Continues from: [Binary Search - Revisit Easy Examples](/entries/2026-09/2026-09-23-binary-search-revisit-easy-examples.md)
