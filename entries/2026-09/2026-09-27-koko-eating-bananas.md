@@ -37,7 +37,7 @@ Let's proceed with other examples from the [original article](https://leetcode.c
 
 Let's look at the Koko Eating Bananas problem which is a medium problem on Leet Code.
 
-The summary of the problem is that Koko has `N` piles of bananas, the `i`-th pile has `piles[i]` bananas. She has `H` hours and she has to choose `K` which is the number of bananas that she eats per hour. The problem is for her to find the minimum `K` framed as here liking to eat bananas slowly such that she is able to finish all bananas from all the piles within `H` hours, before the guards come back.
+The problem is that Koko has `N` piles of bananas, the `i`-th pile has `piles[i]` bananas. She has `H` hours and she has to choose `K` which is the number of bananas that she eats per hour. The problem is for her to find the minimum `K` , as she likes to eat bananas slowly while also being able to finish all bananas from all the piles within `H` hours, before the guards come back.
 
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
