@@ -2,6 +2,7 @@
 
 _Listed by write order; dates shown are work dates, so they may not be in strict order._
 
+- **2026-09-30** — [Binary Search - Make m  Bouquets](entries/2026-09/2026-09-30-make-m-bouquets.md) — #binary-search #algorithms #python #programming #generic
 - **2026-09-27** — [Binary Search - Koko Eating Bananas](entries/2026-09/2026-09-27-koko-eating-bananas.md) — #binary-search #algorithms #python #programming #generic
 - **2026-09-23** — [Binary Search - Revisit Easy Examples ](entries/2026-09/2026-09-23-binary-search-revisit-easy-examples.md) — #binary-search #algorithms #python #programming #generic
 - **2026-09-15** — [Binary Search - Revisit Previous Examples ](entries/2026-09/2026-09-15-binary-search-revisit-prev-examples.md) — #binary-search #algorithms #python #programming #generic
