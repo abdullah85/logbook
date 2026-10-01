@@ -10,7 +10,7 @@ Date: 2026-09-30 <!-- · Repo: [repo-name](https://github.com/username/repo-name
 
 <!-- What problem existed, or what I set out to do. 1–3 sentences. -->
 
-In the [previous entry](/entries/2026-09/2026-09-27-koko-eating-bananas.md), we presented the problem for minimizing the rate of eating bananas `K` while also ensuring that all bananas are completed.
+In the [previous entry](/entries/2026-09/2026-09-27-koko-eating-bananas.md), we minimized the speed of eating bananas while ensuring all bananas are eaten.
 
 Recall the recursive definition for our binary search template below.
 
