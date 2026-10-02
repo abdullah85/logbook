@@ -40,6 +40,25 @@ Let's proceed with the next example from  [original article](https://leetcode.co
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
+The problem requires making `m` bouquets where each bouquet needs `k` adjacent flowers and flower indexed by `i` blooms in `bloomDay[i]` days after which it can be used in exactly one bouquet.
+
+To understand the adjacency requirement, the following example is helpful:
+
+```
+Input: bloomDay = [7,7,7,7,12,7,7], m = 2, k = 3
+Output: 12
+Explanation: We need 2 bouquets each should have 3 flowers.
+Here is the garden after the 7 and 12 days:
+After day 7: [x, x, x, x, _, x, x]
+We can make one bouquet of the first three flowers that bloomed. We cannot make another bouquet from the last three flowers that bloomed because they are not adjacent.
+After day 12: [x, x, x, x, x, x, x]
+It is obvious that we can make two bouquets in different ways.
+
+```
+
+The objective is to minimize the number of days to wait to make `m` bouquets.
+
+If it  is not possible to make `m` bouquets then `-1` must be returned.
 
 ## Notes
 
