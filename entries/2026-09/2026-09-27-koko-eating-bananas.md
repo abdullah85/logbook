@@ -45,7 +45,9 @@ The problem is resolved by using the binary search template with the following c
 ```python
 > from collections import namedtuple
 > SearchSpace = namedtuple("SearchSpace", ["piles", "H"])
-> condition = lambda search_space, speed : sum((pile - 1) // speed + 1 for pile in search_space.piles) <= search_space.H
+> condition = lambda search_space, speed : \
+    sum((pile - 1) // speed + 1 for pile in search_space.piles) \
+        <= search_space.H
 ```
 
 The condition is quite interesting in the way it verifies the speed provided.
