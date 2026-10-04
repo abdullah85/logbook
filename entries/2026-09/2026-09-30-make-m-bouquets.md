@@ -40,7 +40,7 @@ Let's proceed with the next example from  [original article](https://leetcode.co
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
-The problem requires making `m` bouquets where each bouquet needs `k` adjacent flowers and flower indexed by `i` blooms in `bloomDay[i]` days after which it can be used in exactly one bouquet.
+The [problem](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/) requires making `m` bouquets where each bouquet needs `k` adjacent flowers where a flower at index `i` blooms after `bloomDay[i]` days and can be used in exactly one bouquet after that.
 
 To understand the adjacency requirement, the following example is helpful:
 
@@ -58,7 +58,48 @@ It is obvious that we can make two bouquets in different ways.
 
 The objective is to minimize the number of days to wait to make `m` bouquets.
 
-If it  is not possible to make `m` bouquets then `-1` must be returned.
+If it  is not possible to make `m` bouquets then `-1` must be returned and the `SearchSpace` is identified as below:
+```python
+from collections import namedtuple
+SearchSpace = namedtuple("SearchSpace", ["bloomDay", "m", "k"])
+```
+
+To check possibility, `m * k <= len(bloomDay)` is necessary and sufficient.
+
+Thus, the condition and the actual function can be implemented as below:
+```python
+from itertools import groupby
+
+condition = lambda search_space, num_days_passed: \
+    sum(
+        len(list(group)) // search_space.k
+        for bloomed, group in groupby(
+            search_space.bloomDay, key=lambda day: day <= num_days_passed
+        )
+        if bloomed
+    ) >= search_space.m
+```
+
+The above `groupby` is convenient for defining our condition.
+
+```python
+make_m_bouquets = lambda bloomDay, m, k: binary_search_recursive(
+    SearchSpace(bloomDay, m, k), condition, min(bloomDay), max(bloomDay)
+) if m * k <= len(bloomDay) else -1
+```
+Let's now verify that it works as expected on sample values.
+```python
+> make_m_bouquets([1,10,3,10,2], 3, 1)
+3
+
+> make_m_bouquets([1,10,3,10,2], 3, 2)
+-1
+
+> make_m_bouquets([7,7,7,7,12,7,7], 2, 3)
+12
+```
+
+Thus, the problem of making `m` bouquets was solved with the help of the template.
 
 ## Notes
 
