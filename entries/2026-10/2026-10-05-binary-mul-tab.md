@@ -34,13 +34,15 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
         )
 ```
 
-Let's proceed with the next example from  [original article](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) which is to find the kth smallest number in the multiplication table
+Let's proceed with the next example from  [original article](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) which is to find the kth smallest number in the multiplication table.
 
 
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
 The [problem](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/) requires finding the `k-th` smallest number in a multiplication table, `mat` of size `m * n` where `mat[i][j] = i*j` with indices starting from 1, inclusive of end points. This problem seems quite simple to state but is listed as a hard problem in the Leet Code website probably because the inputs are three numbers. Also, this problem seems a bit unrelated to the framework we have at first glance.
+
+To fit the framework, we can define the `enough` function which would take an appropriate search space definition which includes the number `k`  and given any number in the multiplication table it must return `True` if there are at least k numbers in the multiplication table that are less than the number provided.
 
 ## Notes
 
