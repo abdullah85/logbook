@@ -44,6 +44,20 @@ The [problem](https://leetcode.com/problems/kth-smallest-number-in-multiplicatio
 
 To fit the framework, we can define the `enough` function which would take an appropriate search space definition which includes the number `k`  and given any number in the multiplication table it must return `True` if there are at least k numbers in the multiplication table that are less than the number provided.
 
+Consider the `enough` function defined in the article below:
+```python
+    def enough(num) -> bool:
+        count = 0
+        for val in range(1, m + 1):  # count row by row
+            add = min(num // val, n)
+            if add == 0:  # early exit
+                break
+            count += add
+        return count >= k                
+```
+
+It seems to be iterating over all entries which is `O(m*n)` in the worst case.
+
 ## Notes
 
 The kth smallest number in multiplication table problem provided in the   [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was discussed in this entry.
