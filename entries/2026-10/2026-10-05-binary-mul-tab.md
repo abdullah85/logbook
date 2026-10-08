@@ -56,7 +56,30 @@ Consider the `enough` function defined in the article below:
         return count >= k                
 ```
 
-It seems to be iterating over all entries which is `O(m*n)` in the worst case.
+It iterates over the number `m` which denotes the number of rows.
+
+Thus, the solution can be obtained as below:
+
+```python
+> from collections import namedtuple
+> SearchSpace = namedtuple("SearchSpace", ["m", "n", "k"])
+> enough = lambda search_space, num : \
+       sum(min(num // val, search_space.n)
+           for val in range(1, search_space.m + 1)) >= search_space.k
+```
+
+With the above defined, we can finally solve the problem with our template
+```python
+> smallest_k_num = lambda m,n,k : \
+    binary_search_recursive(SearchSpace(m,n,k), enough, 1, m*n)
+> smallest_k_num(3,3,5)
+3
+
+> smallest_k_num(2,3,6)
+6
+```
+
+This was an interesting application of the binary search template.
 
 ## Notes
 
