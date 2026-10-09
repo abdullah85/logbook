@@ -86,7 +86,7 @@ This was an interesting application of the binary search template.
 The kth smallest number in multiplication table problem provided in the   [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was discussed in this entry.
 
 ---
-· Continues from: [Binary Search - Revisit Easy Examples](/entries/2026-09/2026-09-23-binary-search-revisit-easy-examples.md)
+· Continues from:
 
 · Continued in:
 
