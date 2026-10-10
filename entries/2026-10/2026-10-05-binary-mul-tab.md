@@ -2,7 +2,7 @@
 
 <!-- — describing the event, concepts learnt or progress made. -->
 
-[Previous](/entries/2026-09/2026-09-30-make-m-bouquets.md) <!-- · [Next](link to the follow-up entry, once created) -->
+[Previous](/entries/2026-09/2026-09-30-make-m-bouquets.md) · [Next](/entries/2026-10/2026-10-10-binary-smallest-pair.md)
 
 Date: 2026-10-05 <!-- · Repo: [repo-name](https://github.com/username/repo-name) --> <!-- · PR #__ --> <!-- · Issue #__ --> <!-- · Commits #__ -->
 
