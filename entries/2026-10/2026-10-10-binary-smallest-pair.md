@@ -40,7 +40,22 @@ Let's proceed with the next example from  [original article](https://leetcode.co
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
-The [problem](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/) requires finding the `k-th` smallest absolute pair difference from a list of numbers provided by a `num` array. The difference from the previous entry for finding the 
+The [problem](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/) requires finding the `k-th` smallest absolute pair difference from a list of numbers provided by a `num` array. The difference from the previous entry for finding the `kth` smallest number in the multiplication table is obvious as this requires to identify the `kth` smallest pair. A few aspects need to be observed to solve this problem.
+
+The required auxiliary data structures and the `enough` function are of the form:
+```python
+> from collections import namedtuple
+> SearchSpace = namedtuple("SearchSpace", ["nums", "k"])
+> enough = lambda search_space, distance: \
+```
+The `enough` function takes the `search_space`, `distance` as input and is expected to return true if there are at least `k` pairs whose difference is less than or equal to `distance` and this makes the problem slightly more involved than the previous one.
+
+Also, let's assume that the `nums` array is sorted before invoking the `enough` function.
+
+With the formulation above, we can attempt to define the function as:
+```python
+
+```
 
 ## Notes
 
