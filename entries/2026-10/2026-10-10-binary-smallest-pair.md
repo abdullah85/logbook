@@ -34,32 +34,40 @@ def binary_search_recursive(search_space, condition, left, right) -> int:
         )
 ```
 
-Let's proceed with the next example from  [original article](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) which is to find the kth smallest pair distance for a list of numbers.
+Let's proceed with the next example from the [original article](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) which is to find the kth smallest pair distance for a list of numbers.
 
 
 ## Concepts
 <!-- Ideas, terms, or tools I came across — and how they relate to things I already knew. -->
 
-The [problem](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/) requires finding the `k-th` smallest absolute pair difference from a list of numbers provided by a `num` array. The difference from the previous entry for finding the `kth` smallest number in the multiplication table is obvious as this requires to identify the `kth` smallest pair. A few aspects need to be observed to solve this problem.
+The [problem](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/) requires finding the `k-th` smallest absolute pair difference from a list of numbers provided by a `nums` array. The difference from the previous entry for finding the `kth` smallest number in the multiplication table is obvious as this requires identifying the `kth` smallest pair. A few aspects need to be observed to solve this problem.
 
 The required auxiliary data structures and the `enough` function are of the form:
 ```python
-> from collections import namedtuple
-> SearchSpace = namedtuple("SearchSpace", ["nums", "k"])
-> enough = lambda search_space, distance: \
+from collections import namedtuple
+SearchSpace = namedtuple("SearchSpace", ["nums", "k"])
+enough = lambda search_space, distance: \
 ```
-The `enough` function takes the `search_space`, `distance` as input and is expected to return true if there are at least `k` pairs whose difference is less than or equal to `distance` and this makes the problem slightly more involved than the previous one.
+The `enough` function takes the `search_space`, `distance` as input and is expected to return `True` if there are at least `k` pairs whose difference is less than or equal to `distance` and this makes the problem slightly more involved than the previous one.
 
 Also, let's assume that the `nums` array is sorted before invoking the `enough` function.
 
-With the formulation above, we can attempt to define the function as:
+Reviewing the article, we find the function defined as below:
 ```python
-
+def enough(distance) -> bool:  # two pointers
+    count, i, j = 0, 0, 0
+    while i < n or j < n:
+        while j < n and nums[j] - nums[i] <= distance:  # move fast pointer
+            j += 1
+        count += j - i - 1  # count pairs
+        i += 1  # move slow pointer
+    return count >= k
 ```
+The above is correct: when `j == i` the difference is `0`, so `j` always advances past `i` and `j - i - 1` never goes negative. Since `nums` is sorted, `j` never needs to move back as `i` advances, so counting takes `O(n)`. The `or j < n` check is redundant but harmless. Note that it reads `nums`, `n` and `k` from the enclosing scope rather than taking a `search_space` argument, so it needs adapting to fit our template.
 
 ## Notes
 
-The kth smallest absolute pair in a list of numbers provided in the   [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was discussed in this entry.
+The kth smallest absolute pair distance in a list of numbers provided in the [reference](https://leetcode.com/discuss/post/786126/python-powerful-ultimate-binary-search-t-rwv8/) was discussed in this entry.
 
 ---
 · Continues from:
