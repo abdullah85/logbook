@@ -63,7 +63,17 @@ def enough(distance) -> bool:  # two pointers
         i += 1  # move slow pointer
     return count >= k
 ```
-The above is correct: when `j == i` the difference is `0`, so `j` always advances past `i` and `j - i - 1` never goes negative. Since `nums` is sorted, `j` never needs to move back as `i` advances, so counting takes `O(n)`. The `or j < n` check is redundant but harmless. Note that it reads `nums`, `n` and `k` from the enclosing scope rather than taking a `search_space` argument, so it needs adapting to fit our template.
+How it works: since `nums` is sorted, a pair `i < j` has distance `nums[j] - nums[i]`. For each left index `i`, the inner loop pushes `j` to the first index too far from `nums[i]`, so indices `i+1 .. j-1` are its valid partners: `j - i - 1` pairs.
+
+Why `j` never moves back when `i` is incremented: for any index `x` with `i < x < j`, we know `nums[x] - nums[i] <= distance`. Since `nums` is sorted, `nums[i+1] >= nums[i]`, so
+
+`nums[x] - nums[i+1] <= nums[x] - nums[i] <= distance`
+
+Raising the left value only shrinks the distance to elements on its right, so every index before `j` is still within range of `nums[i+1]`. Their outcome is settled before the check is even made, so the inner loop resumes from `j`. Each pointer only moves forward, at most `n` times, giving `O(n)` instead of `O(n^2)`.
+
+Since `nums[i] - nums[i] = 0`, `j` always passes `i`, so `j - i - 1` is never negative and the `or j < n` check is redundant.
+
+Note that it reads `nums`, `n` and `k` from the enclosing scope rather than taking a `search_space` argument, so it needs adapting to fit our template.
 
 ## Notes
 
