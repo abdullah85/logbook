@@ -64,9 +64,11 @@ def enough(distance) -> bool:  # two pointers
     return count >= k
 ```
 
-Since `nums` is sorted, a pair `i < j` has distance `nums[j] - nums[i]`. For each left index `i`, the inner loop pushes `j` to the first index too far from `nums[i]`, so indices `i+1 .. j-1` are its valid partners: `j - i - 1` pairs.
 
-Why `j` never moves back when `i` is incremented: for any index `x` with `i < x < j`, we know `nums[x] - nums[i] <= distance`. Since `nums` is sorted, `nums[i+1] >= nums[i]`, so
+Assuming `nums` is sorted, here are a few doubts with clarifications:
+* A pair `i < j` entails `nums[j] - nums[i]` is not negative.
+* For each `i`, the inner loop pushes `j` to the first index too far from `nums[i]`, so indices `i+1 .. j-1` are its valid partners: `j - i - 1` pairs.
+* Why `j` never moves back when `i` is incremented: for any index `x` with `i < x < j`, we know `nums[x] - nums[i] <= distance`. Since `nums` is sorted, `nums[i+1] >= nums[i]`, so
 
 `nums[x] - nums[i+1] <= nums[x] - nums[i] <= distance`
 
