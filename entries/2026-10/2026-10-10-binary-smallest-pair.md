@@ -65,12 +65,10 @@ def enough(distance) -> bool:  # two pointers
 ```
 
 
-Assuming `nums` is sorted, here are a few doubts with clarifications:
+Assuming `nums` is sorted, here are a few doubts that may appear with clarifications:
 * A pair `i < j` entails `nums[j] - nums[i]` is not negative.
-* For each `i`, the inner loop pushes `j` to the first index too far from `nums[i]`, so indices `i+1 .. j-1` are its valid partners: `j - i - 1` pairs.
-* Why `j` never moves back when `i` is incremented: for any index `x` with `i < x < j`, we know `nums[x] - nums[i] <= distance`. Since `nums` is sorted, `nums[i+1] >= nums[i]`, so
-
-`nums[x] - nums[i+1] <= nums[x] - nums[i] <= distance`
+* For each `i`, the inner loop pushes `j` to the first index too far from `nums[i]`, and `i+1 .. j-1` which are `j - i - 1` valid pairs.
+* Why `j` never moves back when `i` is incremented: for any index `x` with `i < x < j`, we know `nums[x] - nums[i] <= distance`. Since `nums` is sorted, `nums[i+1] >= nums[i]`, we have `nums[x] - nums[i+1] <= nums[x] - nums[i] <= distance`
 
 Raising the left value only shrinks the distance to elements on its right, so every index before `j` is still within range of `nums[i+1]`. Their outcome is settled before the check is even made, so the inner loop resumes from `j`. Each pointer only moves forward, at most `n` times, giving `O(n)` instead of `O(n^2)`.
 
