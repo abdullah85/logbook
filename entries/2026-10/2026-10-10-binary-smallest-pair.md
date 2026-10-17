@@ -46,7 +46,6 @@ The required auxiliary data structures and the `enough` function are of the form
 ```python
 from collections import namedtuple
 SearchSpace = namedtuple("SearchSpace", ["nums", "k"])
-enough = lambda search_space, distance: \
 ```
 The `enough` function takes the `search_space`, `distance` as input and is expected to return `True` if there are at least `k` pairs whose difference is less than or equal to `distance` and this makes the problem slightly more involved than the previous one.
 
@@ -54,27 +53,32 @@ Also, let's assume that the `nums` array is sorted before invoking the `enough` 
 
 Reviewing the article, we find the function defined as below:
 ```python
-def enough(distance) -> bool:  # two pointers
+def enough(search_space, distance) -> bool:
     count, i, j = 0, 0, 0
-    while i < n or j < n:
+    nums = search_space.nums
+    n = len(nums)
+    while i < n - 1:
         while j < n and nums[j] - nums[i] <= distance:  # move fast pointer
             j += 1
         count += j - i - 1  # count pairs
         i += 1  # move slow pointer
-    return count >= k
+    return count >= search_space.k
 ```
 
 
-Assuming `nums` is sorted, here are a few doubts that may appear with clarifications:
+Assuming `nums` is sorted, here are a few clarifications:
 * A pair `i < j` entails `nums[j] - nums[i]` is not negative.
 * For each `i`, the inner loop pushes `j` to the first index too far from `nums[i]`, and `i+1 .. j-1` which are `j - i - 1` valid pairs.
-* Why `j` never moves back when `i` is incremented: for any index `x` with `i < x < j`, we know `nums[x] - nums[i] <= distance`. Since `nums` is sorted, `nums[i+1] >= nums[i]`, we have `nums[x] - nums[i+1] <= nums[x] - nums[i] <= distance`
+* Why `j` never moves back when `i` is incremented: for any index `x` with `i < x < j`, we know `nums[x] - nums[i] <= distance`. Since `nums` is sorted, `nums[i+1] >= nums[i]`, we have `nums[x] - nums[i+1] <= nums[x] - nums[i] <= distance` and we do not reset.
 
-Raising the left value only shrinks the distance to elements on its right, so every index before `j` is still within range of `nums[i+1]`. Their outcome is settled before the check is even made, so the inner loop resumes from `j`. Each pointer only moves forward, at most `n` times, giving `O(n)` instead of `O(n^2)`.
+```python
+def smallest_k_pair(nums, k) -> int:
+    nums.sort()
+    max_diff = max(nums) - min(nums)
+    return binary_search_recursive(SearchSpace(nums, k), enough, 0, max_diff)
+```
 
-Since `nums[i] - nums[i] = 0`, `j` always passes `i`, so `j - i - 1` is never negative and the `or j < n` check is redundant.
-
-Note that it reads `nums`, `n` and `k` from the enclosing scope rather than taking a `search_space` argument, so it needs adapting to fit our template.
+The above definition of `smallest_k_pair` solves the stated problem.
 
 ## Notes
 
