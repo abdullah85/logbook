@@ -2,6 +2,7 @@
 
 _Listed by write order; dates shown are work dates, so they may not be in strict order._
 
+- **2026-10-27** — [ActivityWatch: A short overview](entries/2026-10/2026-10-27-activitywatch-short-overview.md) — #activitywatch #le-laissez-log #log
 - **2026-10-10** — [Binary Search - Kth-Smallest Pair Distance](entries/2026-10/2026-10-10-binary-smallest-pair.md) — #binary-search #algorithms #python #programming #generic
 - **2026-10-05** — [Binary Search - Kth-Smallest Multiplication Table](entries/2026-10/2026-10-05-binary-mul-tab.md) — #binary-search #algorithms #python #programming #generic
 - **2026-09-30** — [Binary Search - Make m  Bouquets](entries/2026-09/2026-09-30-make-m-bouquets.md) — #binary-search #algorithms #python #programming #generic
