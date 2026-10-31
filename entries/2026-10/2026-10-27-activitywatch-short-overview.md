@@ -6,7 +6,7 @@ Date: 2026-10-27 · Repo: [activitywatch](https://github.com/ActivityWatch/activ
 
 ## Context
 
-As developers, we often learn a new concepts everyday without sufficient time to recall, review or record the solutions. For this, I came up with the [Le Laissez Log](https://github.com/abdullah85/le-laissez-log) repository with the objective of logging on a daily basis, in the background. The first step involves collecting data from the terminal and I found the [activitywatch](https://github.com/ActivityWatch/activitywatch) repo to be a good candidate for this step.
+As developers, we learn concepts everyday without sufficient time to recall, review or record the solutions. For this, I came up with the [Le Laissez Log](https://github.com/abdullah85/le-laissez-log) repository with the objective of logging on a daily basis, in the background. The first step involves collecting data from the terminal and I found the [activitywatch](https://github.com/ActivityWatch/activitywatch) repo to be a good candidate for this step.
 
 ## Concepts
 
